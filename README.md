@@ -1,3 +1,2 @@
-
-WELCOME BITCHES
+Personal Portfolio of Eric Townsend
 
