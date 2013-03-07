@@ -1,6 +1,7 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
+html, body { height: 100%; }
 
 html,
 button,
@@ -9,22 +10,19 @@ select,
 textarea {
     color: #222;
 }
-
 body {
     font-size: 1em;
     line-height: 1.4;
+    background: #000;
 }
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 hr {
     display: block;
     height: 1px;
@@ -33,37 +31,143 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
 img {
     vertical-align: middle;
 }
-
+*{
+	background-repeat: no-repeat; 
+} 
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
-
 textarea {
     resize: vertical;
 }
-
 .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
+/* ========================================================================== */ 
+/*   Preloader
+/* ========================================================================== */
+#preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF; /* change if the mask should have another color then white */
+    z-index: 999; /* makes sure it stays on top */
+}
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%; 
+    top: 35%; 
+    background-image: url(../img/icons/logo-loading-5.gif); 
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px; 
+}
+#status > span {
+	position: relative;
+	top: 150px;
+	left: 71px;
+	margin: 0 0 0 0;
+	color: #0F0F0F; 
+}
+/* ========================================================================== */ 
+/*   Architecture
+/* ========================================================================== */
+.wrap { 
+	top: 0;
+	min-height: 100%;
+	height: auto !important; 
+	height: 100%;
+	overflow: hidden;
+	background: #0f0f0f;
+}
+.container {
+	
+}
+.content {
+	
+}
+.inner {
+	position: relative;
+	display: block;
+	width: 88%;
+	height: auto;
+	margin: 0 auto;
+}
+header{
+	position: fixed;
+	top: 0;
+	height: 55px;
+	width: 100%;
+	padding: 10px 0;
+	color: #fff;
+	font-family: ;
+	font-weight: normal;
+	line-height: 55px;
+	border-bottom: 1px solid #222222; 
+	background: rgba(0,0,0,0.98);
+	z-index: 999;
+}
+#footer {
+	position: absolute;
+	bottom: 0 !important;	
+	width: 100%;
+	height: 30px;
+	z-index: 999;
+	background: rgba(0,0,0,0.98);
+}
+/* ========================================================================== */ 
+/*   Header
+/* ========================================================================== */
+header ul {
+	height: auto;
+	margin: 0 0 0 0;
+}
+header ul li {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0 0 0 20px;
+	letter-spacing: 0.1em;
+}
+header ul li a {
+	padding: 10px 13px;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition:    all 0.3s ease;
+	-ms-transition:     all 0.3s ease;
+	-o-transition:      all 0.3s ease;
+}
+header ul li a:hover {
 
+	/*color: rgba(27,109,163,1.0); */ 
+	background: rgba(255,255,255, 0.2);
+}
+header h1 {
+	font-size: 10px;
+	width: 100px;
+	margin: 0 !important;
+	padding: 0;
+}
+/* ========================================================================== */ 
+/*    Portfolio Grid
+/* ========================================================================== */
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-.dog {
-	background: url(../img/dog.jpeg); 
+#porfolio {
+	margin-top: 75px;
+	padding: 1.5%;
 }
 
 
@@ -71,15 +175,9 @@ textarea {
 
 
 
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
+/* ========================================================================== */ 
+/*   Media Queries 
+/* ========================================================================== */
 @media only screen and (min-width: 35em) {
 
 }
@@ -88,32 +186,27 @@ textarea {
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
-
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
+/* ========================================================================== */ 
+/*   Helper Classes 
+/* ========================================================================== */
 .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
     *text-indent: -9999px;
 }
-
 .ir:before {
     content: "";
     display: block;
     width: 0;
     height: 150%;
 }
-
 .hidden {
     display: none !important;
     visibility: hidden;
 }
-
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -124,7 +217,6 @@ textarea {
     position: absolute;
     width: 1px;
 }
-
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -134,92 +226,17 @@ textarea {
     position: static;
     width: auto;
 }
-
 .invisible {
     visibility: hidden;
 }
-
 .clearfix:before,
 .clearfix:after {
     content: " ";
     display: table;
 }
-
 .clearfix:after {
     clear: both;
 }
-
 .clearfix {
     *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
 }

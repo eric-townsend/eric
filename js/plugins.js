@@ -22,13 +22,28 @@
 }()); 
 // Preload 
 $(document).ready(function () {
-		$("#wrap").queryLoader2({
-		barColor: "#fff",
-		backgroundColor: "#000",
+		$(".wrap").queryLoader2({
+		barColor: "#000",
+		backgroundColor: "#fff",
 		percentage: true,
 		barHeight: 1,
-		completeAnimation: "fade",
-		minimumTime: 3000
+		completeAnimation: "grow",
+		minimumTime: 1000
 	});
 
 });
+//Reize .wrap 100% height 
+$(document).ready(function(){
+	resizeDiv();
+});
+
+window.onresize = function(event) {
+	resizeDiv();
+}
+
+function resizeDiv() {
+	vph = $(window).height(); 
+	$('.container').css({'height': vph  + '%'});
+}
+
+
