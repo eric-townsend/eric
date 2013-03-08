@@ -20,8 +20,10 @@
         }
     }
 }()); 
+
+
 // Preload 
-$(document).ready(function () {
+/*$(document).ready(function () {
 		$(".wrap").queryLoader2({
 		barColor: "#000",
 		backgroundColor: "#fff",
@@ -30,9 +32,10 @@ $(document).ready(function () {
 		completeAnimation: "grow",
 		minimumTime: 1000
 	});
+}); */ 
 
-});
-//Reize .wrap 100% height 
+
+/*//Reize .wrap 100% height 
 $(document).ready(function(){
 	resizeDiv();
 });
@@ -43,7 +46,8 @@ window.onresize = function(event) {
 
 function resizeDiv() {
 	vph = $(window).height(); 
-	$('.container').css({'height': vph  + '%'});
+	$('.wrap').css({'height': vph  + '%'});
 }
 
 
+*/ 

@@ -13,10 +13,9 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    background: #000;
 }
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #4573ab;
     text-shadow: none;
 }
 ::selection {
@@ -89,15 +88,12 @@ textarea {
 	min-height: 100%;
 	height: auto !important; 
 	height: 100%;
-	overflow: hidden;
-	background: #0f0f0f;
+	overflow-y: auto;
+	overflow-x: auto;
+	background: rgba(15,15,15,0.92);
 }
-.container {
-	
-}
-.content {
-	
-}
+.container { }
+.content { }
 .inner {
 	position: relative;
 	display: block;
@@ -130,6 +126,8 @@ header{
 /* ========================================================================== */ 
 /*   Header
 /* ========================================================================== */
+/* logo */ 
+
 header ul {
 	height: auto;
 	margin: 0 0 0 0;
@@ -151,9 +149,8 @@ header ul li a {
 	-o-transition:      all 0.3s ease;
 }
 header ul li a:hover {
-
-	/*color: rgba(27,109,163,1.0); */ 
-	background: rgba(255,255,255, 0.2);
+	color: #3498DB;
+	/* background: rgba(255,255,255, 0.2);*/ 
 }
 header h1 {
 	font-size: 10px;
@@ -162,17 +159,14 @@ header h1 {
 	padding: 0;
 }
 /* ========================================================================== */ 
-/*    Portfolio Grid
+/*    Portfolio, About, Contact 
 /* ========================================================================== */
 
-#porfolio {
-	margin-top: 75px;
+#porfolio, #about, #contact {
+	margin-top: 80px;
 	padding: 1.5%;
+	border: 3px solid #fff;
 }
-
-
-
-
 
 
 /* ========================================================================== */ 
