@@ -14,65 +14,42 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<! -- js -->
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script> 
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js"><\/script>')</script> 
 	</head>
     <body>
-		<div class="wrap ani fadeIn delayMed">
+    	<div class="wrap">
 	        <header>
 				<ul class="inner">
 					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#about">About</a></li>
+					<li><a id="aboutClick" href="#about">About</a></li>
+					<li><a href="#about">Contact</a></li>
 				</ul><!-- end ul--> 
 			</header><!-- end header -->
-				
+			
 			<section id="porfolio" class="inner ani delayMed FadeInDown" data-page="portfolio">
 				<img src="img/dog.jpegzz" alt="dog" width="100%" >	
 			</section> <!-- end portfolio -->
 				
 				
 				
-				
-				
-							
+											
 			        	
 	        
 	        
 		</div><!-- end wrap --> 
 	        <! -- js --> 
-	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
-        <script src="js/vendor/conditionizr.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->  
+        <script src="js/libs/conditionizr.js"></script>
+        <script src="js/libs/modernizr-2.6.2.min.js"></script>
         <!-- <script src="js/vendor/jquery.queryloader2.jsz"></script> --> 
      
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-      <script>
-			conditionizr({
-				debug      : true,
-				scriptSrc  : 'js/vendor/conditionizr/',
-				styleSrc   : 'css/conditionizr/',
-				ieLessThan : {
-					active: true,
-					version: '9',
-					scripts: false,
-					styles: false,
-					classes: true,
-					customScript: // Separate polyfills with commas
-						'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js, 
-						//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js'
-					},
-				chrome     : { scripts: true, styles: true, classes: true, customScript: false },
-				safari     : { scripts: true, styles: true, classes: true, customScript: false },
-				opera      : { scripts: true, styles: true, classes: true, customScript: false },
-				firefox    : { scripts: true, styles: true, classes: true, customScript: false },
-				ie10       : { scripts: true, styles: true, classes: true, customScript: false },
-				ie9        : { scripts: true, styles: true, classes: true, customScript: false },
-				ie8        : { scripts: true, styles: true, classes: true, customScript: false },
-				ie7        : { scripts: true, styles: true, classes: true, customScript: false },
-				ie6        : { scripts: true, styles: true, classes: true, customScript: false },
-				retina     : { scripts: true, styles: true, classes: true, customScript: false },
-			});
+        
+        <script>
+	        $(document).ready(function(){
+		
+		     });
         </script>
-
       </body>
 </html>
