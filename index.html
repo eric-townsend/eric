@@ -13,31 +13,50 @@
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/animate.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 		<! -- js -->
 		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js"><\/script>')</script> 
 	</head>
     <body>
     	<div class="wrap">
 	        <header>
-				<ul class="inner">
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a id="aboutClick" href="#about">About</a></li>
-					<li><a href="#about">Contact</a></li>
-				</ul><!-- end ul--> 
+	        	<nav class="inner">
+	        		<ul class="fl">
+	        			<li><a href="#" id="logo">Eric Townsend<span></span></a></li>
+	        			<li><a href="#about">Portfolio</a></li>
+	        			<li><a href="#about">About</a></li>
+	        			<li><a href="#about">Contact</a></li>
+	        		</ul> <!-- end ul -->  
+	        		<!-- social -->
+		        	<ul class="fr">
+						<li class="social"><a href="http://dribbble.com/Eric_t" target="_blank"><i class="icon-dribbble-1"></i></a></li>
+						<li class="social"><a href="http://www.behance.net/erictownsend" target="_blank"><i class="icon-behance"></i></a></li>
+						<li class="social"><a href="http://pinterest.com/erictownsend123/boards/" target="_blank"><i class="icon-pinterest-1"></i></a></li>
+					</ul><!-- end ul--> 
+	        	</nav><!-- end nav -->  
+	        	<div class="inner">
+	        		<h1 class="welcome"></h1>
+		        	<section></section>
+	        	</div> <!--end inner -->
+	        	
+								
+				
+					
+				
+			
 			</header><!-- end header -->
 			
-			<section id="porfolio" class="inner ani delayMed FadeInDown" data-page="portfolio">
-				<img src="img/dog.jpegzz" alt="dog" width="100%" >	
+			
+			<section id="porfolio" class="inner ani fadeInUp delayLong" >
+			<h1> Welcome to the portfolio of Eric Townsend</h1>
+			
+					
 			</section> <!-- end portfolio -->
 				
 				
-				
-											
-			        	
-	        
-	        
+	    <footer></footer> <!-- end footer -->  
 		</div><!-- end wrap --> 
-	        <! -- js --> 
+	    <! -- js --> 
 	    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->  
         <script src="js/libs/conditionizr.js"></script>
         <script src="js/libs/modernizr-2.6.2.min.js"></script>
@@ -45,11 +64,19 @@
      
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        
         <script>
-	        $(document).ready(function(){
-		
-		     });
+        
+		$(function() {
+			$("#logo")
+				.find("span")
+					.hide()
+					.end()
+					.hover(function() {
+				$(this).find("span").stop(true, true).fadeIn();
+					}, function() {
+				$(this).find("span").stop(true, true).fadeOut();
+			});
+		});		     
         </script>
       </body>
 </html>

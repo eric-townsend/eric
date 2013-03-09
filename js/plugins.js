@@ -22,7 +22,7 @@
 }()); 
 
 
-// Preload 
+
 /*$(document).ready(function () {
 		$(".wrap").queryLoader2({
 		barColor: "#000",
@@ -32,8 +32,8 @@
 		completeAnimation: "grow",
 		minimumTime: 1000
 	});
-}); */ 
-
+}); 
+*/
 
 /*//Reize .wrap 100% height 
 $(document).ready(function(){
