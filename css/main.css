@@ -11,15 +11,16 @@ textarea {
     color: #222;
 }
 body {
+	font-family: 'lato';
     font-size: 1em;
     line-height: 1.4;
 }
 ::-moz-selection {
-    background: #4573ab;
+    background: #3498DB;
     text-shadow: none;
 }
 ::selection {
-    background: #b3d4fc;
+    background: #3498DB;
     text-shadow: none;
 }
 hr {
@@ -32,6 +33,7 @@ hr {
 }
 img {
     vertical-align: middle;
+    max-width: 100%
 }
 *{
 	background-repeat: no-repeat; 
@@ -68,7 +70,7 @@ textarea {
     position: absolute;
     left: 50%; 
     top: 35%; 
-    background-image: url(../img/icons/logo-loading-5.gif); 
+    background-image: url(../img/icons/logo-loading.gif); 
     background-repeat: no-repeat;
     background-position: center;
     margin: -100px 0 0 -100px; 
@@ -81,7 +83,7 @@ textarea {
 	color: #0F0F0F; 
 }
 /* ========================================================================== */ 
-/*   Architecture
+/*   								Architecture
 /* ========================================================================== */
 .wrap { 
 	top: 0;
@@ -92,44 +94,51 @@ textarea {
 	overflow-x: auto;
 	background: rgba(15,15,15,0.92);
 }
-.container { }
-.content { }
 .inner {
 	position: relative;
-	display: block;
-	width: 88%;
-	height: auto;
+	width: 85%;
+	height: 75px;
 	margin: 0 auto;
 }
-header{
+header {
 	position: fixed;
 	top: 0;
 	height: 55px;
 	width: 100%;
-	padding: 10px 0;
+	padding: 15px 0 15px 0;
 	color: #fff;
-	font-family: ;
-	font-weight: normal;
+	font-weight: 400;
 	line-height: 55px;
 	border-bottom: 1px solid #222222; 
 	background: rgba(0,0,0,0.98);
 	z-index: 999;
 }
-#footer {
+#porfolio, #about, #contact {
+	margin-top: 120px;
+	padding: 1.5%;
+	height: 100%;
+	border: 2px solid rgba(255,255,255,0.80);
+}
+footer {
 	position: absolute;
 	bottom: 0 !important;	
 	width: 100%;
 	height: 30px;
+	font-size: 0.7em;
+	color: rgba(255,255,255,0.50);
 	z-index: 999;
 	background: rgba(0,0,0,0.98);
 }
 /* ========================================================================== */ 
-/*   Header
+/*    Grid
 /* ========================================================================== */
-/* logo */ 
 
+
+/* ========================================================================== */ 
+/*  								 Nav 
+/* ========================================================================== */
 header ul {
-	height: auto;
+	padding: 0 0 0 0;
 	margin: 0 0 0 0;
 }
 header ul li {
@@ -139,9 +148,13 @@ header ul li {
 	margin: 0 0 0 20px;
 	letter-spacing: 0.1em;
 }
+header ul li:first-child { margin-left: 0; }
 header ul li a {
 	padding: 10px 13px;
-	color: #fff;
+	color: rgba(255,255,255,1);
+	font-size: 0.95em;
+	font-family: 'lato';
+	font-weight: 400;
 	text-decoration: none;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition:    all 0.3s ease;
@@ -152,20 +165,45 @@ header ul li a:hover {
 	color: #3498DB;
 	/* background: rgba(255,255,255, 0.2);*/ 
 }
-header h1 {
-	font-size: 10px;
-	width: 100px;
-	margin: 0 !important;
-	padding: 0;
+#logo {
+	display: inline-block;
+	position: relative;
+	height: 48px;
+	width: 24px;
+	margin-left: 0px;
+	padding: 1px 8px 1px 8px;
+	text-indent: -999em;
+	background: url(../img/eric-logo.png) no-repeat;
+	background-position: center top;
 }
-/* ========================================================================== */ 
-/*    Portfolio, About, Contact 
-/* ========================================================================== */
+#logo:hover {
+	opacity: 0;
+}
+#logo span {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background: url(../img/eric-logo.png) no-repeat;
+	background-position: center bottom;
+}
+#logo:hover {
+	
+}
+.social {
+	width: 25px;
+	padding: 5px;
+	margin: 0 0 0 5px !important;
+}
+.social a {
+	width: 25px;
+	padding: 10px 5px;
+}
 
-#porfolio, #about, #contact {
-	margin-top: 80px;
-	padding: 1.5%;
-	border: 3px solid #fff;
+/* ========================================================================== */ 
+/*    Portfolio
+/* ========================================================================== */
+#porfolio > h1 {
+	color: #3498DB; 
+	font-weight: 300; 
 }
 
 
@@ -185,6 +223,12 @@ header h1 {
 /* ========================================================================== */ 
 /*   Helper Classes 
 /* ========================================================================== */
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
 .ir {
     background-color: transparent;
     border: 0;
