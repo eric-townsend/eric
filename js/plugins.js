@@ -20,22 +20,28 @@
         }
     }
 }()); 
+/* ======================= */
+/*		fade in,out 	   
+======================= */ 
+$(document).ready(function() {
+    $("body").css("display", "none");
+ 
+    $("body").fadeIn(700);
+ 
+    $("a.trans").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(500, redirectPage);      
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+/* ======================= 
+ 			resize 		   
+ ======================= */ 
 
-
-
-/*$(document).ready(function () {
-		$(".wrap").queryLoader2({
-		barColor: "#000",
-		backgroundColor: "#fff",
-		percentage: true,
-		barHeight: 1,
-		completeAnimation: "grow",
-		minimumTime: 1000
-	});
-}); 
-*/
-
-/*//Reize .wrap 100% height 
 $(document).ready(function(){
 	resizeDiv();
 });
@@ -46,8 +52,10 @@ window.onresize = function(event) {
 
 function resizeDiv() {
 	vph = $(window).height(); 
-	$('.wrap').css({'height': vph  + '%'});
-}
+	$('#home').css({'height': vph  + '%'});
+};
 
 
-*/ 
+ 
+
+
