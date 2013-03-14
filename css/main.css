@@ -2,7 +2,7 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 html, body { height: 100%; }
-html{ background: rgba(15,15,15,0.92); }
+html{ background: rgba(15,15,15,0.60); }
 body {
 	font-family: 'lato';
 	font-weight: normal;
@@ -36,7 +36,7 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 	height: 100%;
 	overflow-y: auto;
 	overflow-x: auto;
-	background: rgba(15,15,15,0.92);
+	background: rgba(15,15,15,0.60);
 }
 .inner {
 	position: relative;
@@ -45,7 +45,7 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 	margin: 0 auto;
 }
 #home, #porfolio, #about, #contact {
-	margin-top: 120px;
+	margin: 120px auto 100px auto;
 	padding: 1.5%;
 	height: 100%;
 	border: 2px solid rgba(255,255,255,0.80);
