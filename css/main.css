@@ -2,7 +2,7 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 html, body { height: 100%; }
-html{ background: rgba(15,15,15,0.60); }
+/*html { background: rgba(15,15,15,0.60); } */
 body {
 	font-family: 'lato';
 	font-weight: normal;
@@ -17,14 +17,14 @@ body {
 /* ========================================================================== */ 
 /*   								Typography
 /* ========================================================================== */
-h1, h2, h3, h4, h5, h6 { font-family: 'lato', helvetica, arial, sans-serif; color: #3498DB; }
+h1, h2, h3, h4, h5, h6 { font-family: 'lato', helvetica, arial, sans-serif; color: #393939; }
 h1 {margin: 0; font-size: 3.75em; line-height: 1.2em; margin-bottom: 0.4em} /* 60px / 72px */
 h2 {margin: 0; font-size: 3em; line-height: 1em; margin-bottom: 0.5em} /* 48px / 48px */
 h3 {margin: 0; font-size: 2.25em; line-height: 1.3333333333333333333333333333333em; margin-bottom: 0.6667em} /* 36px / 48px */ 
 h4 {margin: 0; font-size: 1.5em; line-height: 1em; margin-bottom: 1em} /* 24px / 24px */
 h5 {margin: 0; font-size: 1.3125em; line-height: 1.1428571428571428571428571428571em; margin-bottom: 1.1428571428571428571428571428571em} /* 21px / 24px */
 h6 {margin: 0; font-size: 1.125em; line-height: 1.3333333333333333333333333333333em; margin-bottom: 1.3333333333333333333333333333333em} /* 18px / 24px */
-p, ul, blockquote, pre, td, th, label {margin: 0; font-size: 1em; margin-bottom: 1.5em} /* 16px / 24px */
+p, ul, blockquote, pre, td, th, label {margin: 0; font-size: 1em; margin-bottom: 1.5em; color: #393939} /* 16px / 24px */
 small, p.small {margin: 0; font-size: 0.875em; line-height: 1.7142857142857142857142857142857em; margin-bottom: 1.7142857142857142857142857142857em} /* 14px / 24px */
 /* ========================================================================== */ 
 /*   								Architecture
@@ -32,11 +32,8 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 .wrap { 
 	top: 0;
 	min-height: 100%;
-	height: auto !important; 
-	height: 100%;
-	overflow-y: auto;
-	overflow-x: auto;
-	background: rgba(15,15,15,0.60);
+	height: auto;
+	background: #eaeaea;
 }
 .inner {
 	position: relative;
@@ -45,10 +42,21 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 	margin: 0 auto;
 }
 #home, #porfolio, #about, #contact {
-	margin: 120px auto 100px auto;
+	margin: 50px auto 100px auto;
 	padding: 1.5%;
 	height: 100%;
-	border: 2px solid rgba(255,255,255,0.80);
+	border: 2px solid #000;
+}
+.hero {
+	width: 100%;
+	height: 300px;
+	max-height: 300px;
+	padding: 1.5% 0 1.5% 0;
+	background: #b33232;
+	margin-top: 86px;
+}
+.hero .inner {
+	border: 1px solid black;
 }
 /* ========================================================================== */ 
 /*  								 Header + Nav 
@@ -88,10 +96,7 @@ header ul li a {
 	-ms-transition:     all 0.3s ease;
 	-o-transition:      all 0.3s ease;
 }
-header ul li a:hover {
-	color: #3498DB;
-	/* background: rgba(255,255,255, 0.2);*/ 
-}
+header ul li a:hover { color: #3498DB; }
 #logo {
 	display: inline-block;
 	position: relative;
@@ -100,7 +105,7 @@ header ul li a:hover {
 	margin-left: 0px;
 	padding: 1px 8px 1px 8px;
 	text-indent: -999em;
-	background: url(../img/eric-logo.png) no-repeat;
+	background: url(../img/eric-logo.png) no-repeat; /* change to svg */ 
 	opacity: 0.7;
 }
 #logo:hover {
@@ -109,12 +114,16 @@ header ul li a:hover {
 .social {
 	width: 25px;
 	padding: 5px;
-	margin: 0 0 0 5px !important;
+	margin: 0 0 0 5px;
 }
 .social a {
 	width: 25px;
 	padding: 10px 5px;
 }
+/* ========================================================================== */ 
+/*    Hero
+/* ========================================================================== */
+
 /* ========================================================================== */ 
 /*    Portfolio
 /* ========================================================================== */
