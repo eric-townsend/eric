@@ -2,7 +2,7 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 html, body { height: 100%; }
-/*html { background: rgba(15,15,15,0.60); } */
+html { background: #2C2C2C; }
 body {
 	font-family: 'lato';
 	font-weight: normal;
@@ -31,9 +31,10 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 /* ========================================================================== */
 .wrap { 
 	top: 0;
-	min-height: 100%;
 	height: auto;
 	background: #eaeaea;
+	height: auto;
+	background: #2C2C2C;
 }
 .inner {
 	position: relative;
