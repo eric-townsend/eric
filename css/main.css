@@ -1,6 +1,3 @@
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
 html, body { height: 100%; }
 html { background: #2C2C2C; }
 body {
@@ -8,9 +5,9 @@ body {
 	font-weight: normal;
 	font-variant: normal;
     font-size: 1em;
-    -webkit-font-smoothing:antialiased; 
-    font-smoothing:antialiased; 
-    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing: antialiased; 
+    font-smoothing: antialiased; 
+    text-rendering: optimizeLegibility;
     color: #ffffff;
     line-height: 1.4;
 }
@@ -39,25 +36,33 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 .inner {
 	position: relative;
 	width: 85%;
+	max-width: 1800px;
 	height: 75px;
 	margin: 0 auto;
 }
 #home, #porfolio, #about, #contact {
-	margin: 50px auto 100px auto;
+	margin: 100px auto 100px auto;
 	padding: 1.5%;
 	height: 100%;
 	border: 2px solid #000;
 }
-.hero {
+footer {
+	position: absolute;
+	bottom: 0 !important;	
 	width: 100%;
-	height: 300px;
-	max-height: 300px;
-	padding: 1.5% 0 1.5% 0;
-	background: #b33232;
-	margin-top: 86px;
+	height: 4em;
+	font-size: 0.7em;
+	color: rgba(255,255,255,0.50);
+	z-index: 999;
+	background: rgba(0,0,0,0.98);
 }
-.hero .inner {
-	border: 1px solid black;
+footer i {
+	height: 30px;
+	height: 30px;
+	margin-left: 50%;
+	font-size: 1.7em;
+	line-height: 2em;
+	background: #3498DB;
 }
 /* ========================================================================== */ 
 /*  								 Header + Nav 
@@ -67,7 +72,7 @@ header {
 	top: 0;
 	height: 55px;
 	width: 100%;
-	padding: 15px 0 15px 0;
+	padding: 15px 0 10px 0;
 	font-weight: 400;
 	line-height: 55px;
 	border-bottom: 1px solid #222222; 
@@ -124,7 +129,15 @@ header ul li a:hover { color: #3498DB; }
 /* ========================================================================== */ 
 /*    Hero
 /* ========================================================================== */
-
+.hero {
+	width: 100%;
+	height: 300px;
+	max-height: 300px;
+	padding: 1.5% 0 1.5% 0;
+	/* temporary styles*/ 
+	background: #b33232;
+	margin-top: 81px;
+}
 /* ========================================================================== */ 
 /*    Portfolio
 /* ========================================================================== */
@@ -132,40 +145,6 @@ header ul li a:hover { color: #3498DB; }
 	color: #3498DB; 
 	font-weight: 300; 
 }
-/* ========================================================================== */ 
-/*    Footer
-/* ========================================================================== */
-footer {
-	position: absolute;
-	bottom: 0 !important;	
-	width: 100%;
-	height: 4em;
-	font-size: 0.7em;
-	color: rgba(255,255,255,0.50);
-	z-index: 999;
-	background: rgba(0,0,0,0.98);
-}
-footer i {
-	height: 30px;
-	height: 30px;
-	margin-left: 50%;
-	font-size: 1.7em;
-	line-height: 2em;
-	background: #3498DB;
-}
-/* ========================================================================== */ 
-/*   Media Queries 
-/* ========================================================================== */
-@media only screen and (min-width: 35em) {
-
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-}
-
 /* ========================================================================== */ 
 /*   Helper Classes 
 /* ========================================================================== */
@@ -224,3 +203,16 @@ footer i {
 .clearfix {
     *zoom: 1;
 }
+/* ========================================================================== */ 
+/*   Media Queries 
+/* ========================================================================== */
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+}
+
