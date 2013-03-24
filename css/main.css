@@ -36,8 +36,8 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 .inner {
 	position: relative;
 	width: 85%;
-	max-width: 1800px;
-	height: 75px;
+	max-width: 1140px;
+	height: auto;
 	margin: 0 auto;
 }
 #home, #porfolio, #about, #contact {
