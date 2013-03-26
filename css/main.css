@@ -29,9 +29,8 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 .wrap { 
 	top: 0;
 	height: auto;
-	background: #eaeaea;
-	height: auto;
-	background: #2C2C2C;
+	margin-bottom: 5%;
+	background: #EFEFEF;
 }
 .inner {
 	position: relative;
@@ -55,14 +54,6 @@ footer {
 	color: rgba(255,255,255,0.50);
 	z-index: 999;
 	background: rgba(0,0,0,0.98);
-}
-footer i {
-	height: 30px;
-	height: 30px;
-	margin-left: 50%;
-	font-size: 1.7em;
-	line-height: 2em;
-	background: #3498DB;
 }
 /* ========================================================================== */ 
 /*  								 Header + Nav 
@@ -131,10 +122,8 @@ header ul li a:hover { color: #3498DB; }
 /* ========================================================================== */
 .hero {
 	width: 100%;
-	height: 300px;
-	max-height: 300px;
+	height: 600px;
 	padding: 1.5% 0 1.5% 0;
-	/* temporary styles*/ 
 	background: #b33232;
 	margin-top: 81px;
 }
