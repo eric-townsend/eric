@@ -1,5 +1,4 @@
-html, body { height: 100%; }
-html { background: #2C2C2C; }
+html, body { height: 100%; background: #2a2a2a; }
 body {
 	font-family: 'lato';
 	font-weight: normal;
@@ -26,24 +25,26 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 /* ========================================================================== */ 
 /*   								Architecture
 /* ========================================================================== */
-.wrap { 
+.wrap, .project-wrap { 
+	position: absolute;
 	top: 0;
+	right: 0;
+	left: 0;
 	height: auto;
+	width: 100% auto;
 	margin-bottom: 5%;
 	background: #EFEFEF;
 }
 .inner {
 	position: relative;
 	width: 85%;
-	max-width: 1140px;
 	height: auto;
 	margin: 0 auto;
 }
-#home, #porfolio, #about, #contact {
-	margin: 100px auto 100px auto;
-	padding: 1.5%;
+#home, #porfolio, #about, #contact, #intro, .project-wrap {
+	margin: 84px auto 100px auto;
+	padding: 1.5% 0 1.5% 0;;
 	height: 100%;
-	border: 2px solid #000;
 }
 footer {
 	position: absolute;
@@ -111,21 +112,38 @@ header ul li a:hover { color: #3498DB; }
 .social {
 	width: 25px;
 	padding: 5px;
-	margin: 0 0 0 5px;
+	margin: 0 0 8px 0;
 }
 .social a {
-	width: 25px;
+	width: 24px;
 	padding: 10px 5px;
 }
 /* ========================================================================== */ 
-/*    Hero
+/*    Heros 
 /* ========================================================================== */
 .hero {
 	width: 100%;
-	height: 600px;
+	max-height: 600px;
 	padding: 1.5% 0 1.5% 0;
-	background: #b33232;
-	margin-top: 81px;
+}
+#intro {
+	background: url(../img/dog.jpeg) center top repeat-x #3498DB;
+	opacity: 0.3;
+	width: 100%;
+	height: 600px; 
+}
+/* ========================================================================== */ 
+/*    Desctiptions 
+/* ========================================================================== */
+.desc {
+	clear: both;
+}
+
+.dsec:before {
+  content: "#";
+   border: solid 1px black;
+   padding: 2px;
+   margin: 0 10px 0 0;
 }
 /* ========================================================================== */ 
 /*    Portfolio
@@ -195,13 +213,184 @@ header ul li a:hover { color: #3498DB; }
 /* ========================================================================== */ 
 /*   Media Queries 
 /* ========================================================================== */
-@media only screen and (min-width: 35em) {
+.col {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+/* ========================================================================== */ 
+/* 1. 1 Column Grid 0px - 499px 
+/* ========================================================================== */
+@media screen and (min-width: 0px) and (max-width: 499px) {
+    
+.col {
+    margin-left:0%;
+	padding:0 0.5%;
+}
+.row .col:first-child {
+    margin-left:0;
+}
+/* ============================ */
 
+/*
+.span_3,
+.my_semantic_class_name 
+*/
+
+/* ============================ */
+.span_1 {
+    margin-left:0;
+    width:100%;
+}
+} /* end 320 */
+
+/* ========================================================================== */ 
+/*  2. 3 Column Grid 500px - 799px 
+/*  Span 1:    33.0%
+/*	Span 2:    66.5%
+/*	Span 3:    100% 
+/* ========================================================================== */
+@media screen and (min-width: 500px) and (max-width: 799px) {
+.col {
+    margin-left:0.5%;
+	padding:0 0.5%;
+}
+.row .col:first-child {
+    margin-left:0;
+}
+/* ============================ */
+
+
+
+/* ============================ */
+.span_1 {
+    width:33.0%;
+}
+.span_2 {
+    width:66.5%;
+}
+.span_3 {
+    margin-left:0;
+    width:100%;
+}
+} /* end 500 */ 
+
+/* ========================================================================== */ 
+/* 3. 6 Column Grid 800px - 1139px 
+/* Span 1:    16.25%
+/* Span 2:    33.0%
+/* Span 3:    49.75%
+/* Span 4:    66.5%
+/* Span 5:    83.25%
+/* Span 6:    100%
+/* ========================================================================== */
+@media screen and (min-width: 800px) and (max-width: 1139px) {
+.col {
+    margin-left:0.5%;
+	padding:0 0.5%;
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+.row .col:first-child {
+    margin-left:0;
 }
+/* ============================ */
+
+/* ============================ */
+.span_1 {
+    width:16.25%;
+}
+.span_2 {
+    width:33.0%;
+}
+.span_3 {
+    width:49.75%;
+}
+.span_4 {
+    width:66.5%;
+}
+.span_5 {
+    width:83.25%;
+}
+.span_6 {
+    margin-left:0;
+    width:100%;
+}
+} /*end 800 */  
+
+/* ========================================================================== */ 
+/* 	4. 12 Column Grid 1140px - Infinity 
+/* 	Span 1:    7.875%
+/* 	Span 2:    16.25%
+/* 	Span 3:    24.625%
+/* 	Span 4:    33.0%
+/* 	Span 5:    41.375%
+/* 	Span 6:    49.75%
+/* 	Span 7:    58.125%
+/* 	Span 8:    66.5%
+/* 	Span 9:    74.875%
+/* 	Span 10:    83.25%
+/* 	Span 11:    91.625%
+/* 	Span 12:    100%
+/* ========================================================================== */
+@media screen and (min-width: 1140px) {
+.col {
+    margin-left:0.5%;
+	padding:0 0.5%;
+}
+
+.row .col:first-child {
+    margin-left:0;
+}
+/* ============================ */
+
+
+
+
+
+/* ============================ */
+.span_1 {
+    width:7.875%;
+}
+.span_2 {
+    width:16.25%;
+}
+.span_3 {
+    width:24.625%;
+}
+.span_4 {
+    width:33.0%;
+}
+.span_5 {
+    width:41.375%;
+}
+.span_6 {
+    width:49.75%;
+}
+.span_7 {
+    width:58.125%;
+}
+.span_8 {
+    width:66.5%;
+}
+.span_9 {
+    width:74.875%;
+}
+.span_10 {
+    width:83.25%;
+}
+.span_11 {
+    width:91.625%;
+}
+.span_12 {
+    margin-left:0;
+    width:100%;
+}
+
+
+} /* end 1140 /* 
 
