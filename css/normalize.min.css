@@ -24,3 +24,62 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid #222222; marg
 @media screen and (-webkit-min-device-pixel-ratio:0){@font-face{font-family:'fontello';src:url('../fonts/fontello.svg?19479098#fontello') format('svg')}}
 /* */ 
 [class^="icon-"]:before,[class*=" icon-"]:before{font-family:'fontello';font-style:normal;font-weight:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em}.icon-plus:before{content:'\2b'}.icon-minus:before{content:'\2d'}.icon-forrst:before{content:'\3a'}.icon-left-thin:before{content:'\2190'}.icon-up-thin:before{content:'\2191'}.icon-right-thin:before{content:'\2192'}.icon-up-dir:before{content:'\25b4'}.icon-right-dir:before{content:'\25b8'}.icon-down-dir:before{content:'\25be'}.icon-left-dir:before{content:'\25c2'}.icon-menu:before{content:'\2630'}.icon-layout:before{content:'\268f'}.icon-mail:before{content:'\2709'}.icon-pencil:before{content:'\270e'}.icon-check:before{content:'\2713'}.icon-cancel:before{content:'\2715'}.icon-cancel-circled:before{content:'\2716'}.icon-plus-circled:before{content:'\2795'}.icon-minus-circled:before{content:'\2796'}.icon-right:before{content:'\27a1'}.icon-direction:before{content:'\27a2'}.icon-left:before{content:'\2b05'}.icon-up:before{content:'\2b06'}.icon-down:before{content:'\2b07'}.icon-left-bold:before{content:'\e4ad'}.icon-print:before{content:'\e716'}.icon-comment:before{content:'\e718'}.icon-publish:before{content:'\e74d'}.icon-down-circled:before{content:'\e758'}.icon-left-circled:before{content:'\e759'}.icon-right-circled:before{content:'\e75a'}.icon-up-circled:before{content:'\e75b'}.icon-down-open:before{content:'\e75c'}.icon-left-open:before{content:'\e75d'}.icon-right-open:before{content:'\e75e'}.icon-up-open:before{content:'\e75f'}.icon-down-open-mini:before{content:'\e760'}.icon-left-open-mini:before{content:'\e761'}.icon-right-open-mini:before{content:'\e762'}.icon-up-open-mini:before{content:'\e763'}.icon-down-open-big:before{content:'\e764'}.icon-left-open-big:before{content:'\e765'}.icon-right-open-big:before{content:'\e766'}.icon-up-open-big:before{content:'\e767'}.icon-paper-plane:before{content:'\e79b'}.icon-twitter:before{content:'\f309'}.icon-facebook:before{content:'\f30c'}.icon-gplus:before{content:'\f30f'}.icon-pinterest-1:before{content:'\f312'}.icon-linkedin:before{content:'\f318'}.icon-dribbble-1:before{content:'\f31b'}.icon-behance:before{content:'\f34e'}.icon-download:before{content:'📥'}.icon-back:before{content:'🔙'}.icon-rocket:before{content:'🚀'}.icon-block:before{content:'🚫'}
+
+/* ========================================================================== */ 
+/*   Helper Classes 
+/* ========================================================================== */
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
