@@ -28,17 +28,15 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 .wrap, .project-wrap { 
 	position: absolute;
 	top: 0;
-	right: 0;
-	left: 0;
 	height: auto;
-	width: 100% auto;
+	width: 100%;
 	margin-bottom: 5%;
 	background: #EFEFEF;
 }
 .inner {
-	position: relative;
 	width: 85%;
-	height: auto;
+	max-width: 1280px;
+	min-height: 50px;
 	margin: 0 auto;
 }
 #home, #porfolio, #about, #contact, #intro, .project-wrap {
@@ -60,11 +58,11 @@ footer {
 /*  								 Header + Nav 
 /* ========================================================================== */
 header {
-	position: fixed;
 	top: 0;
 	height: 55px;
 	width: 100%;
 	padding: 15px 0 10px 0;
+	margin: 0 auto;
 	font-weight: 400;
 	line-height: 55px;
 	border-bottom: 1px solid #222222; 
@@ -146,11 +144,17 @@ header ul li a:hover { color: #3498DB; }
    margin: 0 10px 0 0;
 }
 /* ========================================================================== */ 
-/*    Portfolio
+/*    Portfolio Grid
 /* ========================================================================== */
 #porfolio > h1 {
 	color: #3498DB; 
 	font-weight: 300; 
+}
+
+.thumbnail {
+	background: #3498DB;
+	min-height: 300px;
+	padding-top: 35px;
 }
 /* ========================================================================== */ 
 /*   Helper Classes 
@@ -216,6 +220,7 @@ header ul li a:hover { color: #3498DB; }
 .col {
     border:0px solid rgba(0,0,0,0);
     float:left;
+    margin-bottom: 1%;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
@@ -223,174 +228,122 @@ header ul li a:hover { color: #3498DB; }
     -webkit-background-clip:padding-box !important;
     background-clip:padding-box !important;
 }
-/* ========================================================================== */ 
-/* 1. 1 Column Grid 0px - 499px 
-/* ========================================================================== */
-@media screen and (min-width: 0px) and (max-width: 499px) {
+
+    /* 1. 4 Column Grid 0px - 459px 
+    ----------------------------------------------------------------------------- 
     
-.col {
-    margin-left:0%;
-	padding:0 0.5%;
-}
-.row .col:first-child {
-    margin-left:0;
-}
-/* ============================ */
-
-/*
-.span_3,
-.my_semantic_class_name 
-*/
-
-/* ============================ */
-.span_1 {
-    margin-left:0;
-    width:100%;
-}
-} /* end 320 */
-
-/* ========================================================================== */ 
-/*  2. 3 Column Grid 500px - 799px 
-/*  Span 1:    33.0%
-/*	Span 2:    66.5%
-/*	Span 3:    100% 
-/* ========================================================================== */
-@media screen and (min-width: 500px) and (max-width: 799px) {
-.col {
-    margin-left:0.5%;
-	padding:0 0.5%;
-}
-.row .col:first-child {
-    margin-left:0;
-}
-/* ============================ */
-
-
-
-/* ============================ */
-.span_1 {
-    width:33.0%;
-}
-.span_2 {
-    width:66.5%;
-}
-.span_3 {
-    margin-left:0;
-    width:100%;
-}
-} /* end 500 */ 
-
-/* ========================================================================== */ 
-/* 3. 6 Column Grid 800px - 1139px 
-/* Span 1:    16.25%
-/* Span 2:    33.0%
-/* Span 3:    49.75%
-/* Span 4:    66.5%
-/* Span 5:    83.25%
-/* Span 6:    100%
-/* ========================================================================== */
-@media screen and (min-width: 800px) and (max-width: 1139px) {
-.col {
-    margin-left:0.5%;
-	padding:0 0.5%;
-}
-
-.row .col:first-child {
-    margin-left:0;
-}
-/* ============================ */
-
-/* ============================ */
-.span_1 {
-    width:16.25%;
-}
-.span_2 {
-    width:33.0%;
-}
-.span_3 {
-    width:49.75%;
-}
-.span_4 {
-    width:66.5%;
-}
-.span_5 {
-    width:83.25%;
-}
-.span_6 {
-    margin-left:0;
-    width:100%;
-}
-} /*end 800 */  
-
-/* ========================================================================== */ 
-/* 	4. 12 Column Grid 1140px - Infinity 
-/* 	Span 1:    7.875%
-/* 	Span 2:    16.25%
-/* 	Span 3:    24.625%
-/* 	Span 4:    33.0%
-/* 	Span 5:    41.375%
-/* 	Span 6:    49.75%
-/* 	Span 7:    58.125%
-/* 	Span 8:    66.5%
-/* 	Span 9:    74.875%
-/* 	Span 10:    83.25%
-/* 	Span 11:    91.625%
-/* 	Span 12:    100%
-/* ========================================================================== */
-@media screen and (min-width: 1140px) {
-.col {
-    margin-left:0.5%;
-	padding:0 0.5%;
-}
-
-.row .col:first-child {
-    margin-left:0;
-}
-/* ============================ */
+    Span 1:    24.25%
+    Span 2:    49.5%
+    Span 3:    74.75%
+    Span 4:    100%
+    
+    ----------------------------------------------------------------------------- */
+    @media screen and (min-width: 320px) and (max-width: 420px) {
+        
+        .col {
+            margin-left:1%;
+        	padding:0 0%;
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        
+        /*
+        Add your semantic classnames in alongside their corresponding spans here. e.g.
+        
+        .span_3,
+        .my_semantic_class_name {
+            ...
+        }
+        */
+        
+        .span_1 {
+            width:24.25%;
+        }
+        .span_2 {
+            width:49.5%;
+        }
+        .span_3 {
+            width:74.75%;
+        }
+        .span_4 {
+            margin-left:0;
+            width:100%;
+        }
+    }
 
 
 
 
+    /* 4. 12 Column Grid 1280px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    7.41666666667%
+    Span 2:    15.8333333333%
+    Span 3:    24.25%
+    Span 4:    32.6666666667%
+    Span 5:    41.0833333333%
+    Span 6:    49.5%
+    Span 7:    57.9166666667%
+    Span 8:    66.3333333333%
+    Span 9:    74.75%
+    Span 10:    83.1666666667%
+    Span 11:    91.5833333333%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */
 
-/* ============================ */
-.span_1 {
-    width:7.875%;
-}
-.span_2 {
-    width:16.25%;
-}
-.span_3 {
-    width:24.625%;
-}
-.span_4 {
-    width:33.0%;
-}
-.span_5 {
-    width:41.375%;
-}
-.span_6 {
-    width:49.75%;
-}
-.span_7 {
-    width:58.125%;
-}
-.span_8 {
-    width:66.5%;
-}
-.span_9 {
-    width:74.875%;
-}
-.span_10 {
-    width:83.25%;
-}
-.span_11 {
-    width:91.625%;
-}
-.span_12 {
-    margin-left:0;
-    width:100%;
-}
-
-
-} /* end 1140 /* 
+    @media screen and (min-width: 1280px) (max-width: 1280px) {
+        
+        .col {
+            margin-left:1%;
+        	padding:0 0%;
+        }
+        
+        .row .col:first-child {
+            margin-left:0;
+        }
+        
+        
+        
+        .span_1 {
+            width:7.41666666667%;
+        }
+        .span_2 {
+            width:15.8333333333%;
+        }
+        .span_3 {
+            width:24.25%;
+        }
+        .span_4 {
+            width:32.6666666667%;
+        }
+        .span_5 {
+            width:41.0833333333%;
+        }
+        .span_6 {
+            width:49.5%;
+        }
+        .span_7 {
+            width:57.9166666667%;
+        }
+        .span_8 {
+            width:66.3333333333%;
+        }
+        .span_9 {
+            width:74.75%;
+        }
+        .span_10 {
+            width:83.1666666667%;
+        }
+        .span_11 {
+            width:91.5833333333%;
+        }
+        .span_12 {
+            margin-left:0;
+            width:100%;
+        }
+    }
 
