@@ -1,4 +1,4 @@
-html, body { height: 100%; background: #2a2a2a; }
+html, body { background: #EFEFEF; }
 body {
 	font-family: 'lato';
 	font-weight: normal;
@@ -25,30 +25,17 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 /* ========================================================================== */ 
 /*   								Architecture
 /* ========================================================================== */
-.wrap, .project-wrap { 
-	position: absolute;
-	top: 0;
-	height: auto;
-	width: 100%;
-	margin-bottom: 5%;
-	background: #EFEFEF;
-}
 .inner {
 	width: 85%;
 	max-width: 1280px;
-	min-height: 50px;
 	margin: 0 auto;
 }
-#home, #porfolio, #about, #contact, #intro, .project-wrap {
-	margin: 84px auto 100px auto;
-	padding: 1.5% 0 1.5% 0;;
-	height: 100%;
-}
 footer {
-	position: absolute;
-	bottom: 0 !important;	
+	position: relative;
+	bottom: 0 ;	
 	width: 100%;
 	height: 4em;
+	margin-top: 100px;
 	font-size: 0.7em;
 	color: rgba(255,255,255,0.50);
 	z-index: 999;
@@ -104,9 +91,7 @@ header ul li a:hover { color: #3498DB; }
 	background: url(../img/logo.png) no-repeat; /*! change to svg! */ 
 	opacity: 0.7;
 }
-#logo:hover {
-	opacity: 1;
-}
+#logo:hover { opacity: 1; }
 .social {
 	width: 25px;
 	padding: 5px;
@@ -117,7 +102,7 @@ header ul li a:hover { color: #3498DB; }
 	padding: 10px 5px;
 }
 /* ========================================================================== */ 
-/*    Heros 
+/*    										Heros 
 /* ========================================================================== */
 .hero {
 	width: 100%;
@@ -126,38 +111,58 @@ header ul li a:hover { color: #3498DB; }
 }
 #intro {
 	background: url(../img/dog.jpeg) center top repeat-x #3498DB;
-	opacity: 0.3;
 	width: 100%;
 	height: 600px; 
 }
 /* ========================================================================== */ 
-/*    Desctiptions 
+/*    									Look Around 
 /* ========================================================================== */
-.desc {
-	clear: both;
-}
-
-.dsec:before {
-  content: "#";
-   border: solid 1px black;
-   padding: 2px;
-   margin: 0 10px 0 0;
+#look h5 {
+	margin: 4% 0 2% 38%;
+	padding: 0 0 1% 0;
+	font-size: 1.3em;
+	text-shadow: 0px 1px 0px #fff;
+	-webkit-text-shadow: 0px 1px 0px #fff;
+	-o-text-shadow: 0px 1px 0px #fff;
+	-ms-text-shadow: 0px 1px 0px #fff;
 }
 /* ========================================================================== */ 
-/*    Portfolio Grid
+/*    									Portfolio Grid
 /* ========================================================================== */
 #porfolio > h1 {
 	color: #3498DB; 
 	font-weight: 300; 
 }
-
 .thumbnail {
-	background: #3498DB;
+	min-height: 250px;
+	background: #fff;
+	border: 1px solid rgba(227,227,227,0.55) !important;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(227,227,227,0.7);
+}
+.thumbnail > a {
+	display: block;
+	position: relative;
 	min-height: 300px;
-	padding-top: 35px;
+	height: 99.999%;
+	padding: 40px 15px 0 15px;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.thumbnail > a:hover { background: rgba(52,153,220,1.55); }
+.thumbnail > a > img {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	height: auto;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
 /* ========================================================================== */ 
-/*   Helper Classes 
+/*   										Helper Classes 
 /* ========================================================================== */
 .fr {
 	float: right;
@@ -238,41 +243,33 @@ header ul li a:hover { color: #3498DB; }
     Span 4:    100%
     
     ----------------------------------------------------------------------------- */
-    @media screen and (min-width: 320px) and (max-width: 420px) {
-        
-        .col {
-            margin-left:1%;
-        	padding:0 0%;
-        }
-        
-        .row .col:first-child {
-            margin-left:0;
-        }
-        
-        
-        /*
-        Add your semantic classnames in alongside their corresponding spans here. e.g.
-        
-        .span_3,
-        .my_semantic_class_name {
-            ...
-        }
-        */
-        
-        .span_1 {
-            width:24.25%;
-        }
-        .span_2 {
-            width:49.5%;
-        }
-        .span_3 {
-            width:74.75%;
-        }
-        .span_4 {
-            margin-left:0;
-            width:100%;
-        }
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    
+    .col {
+        margin-left:1%;
+    	padding:0 0%;
     }
+    
+    .row .col:first-child {
+        margin-left:0;
+    }
+    
+    
+    /*
+    Add your semantic classnames in alongside their corresponding spans here. e.g.
+    
+    .span_3,
+    .my_semantic_class_name {
+        ...
+    }
+    */
+    
+
+    .span_4 {
+        margin-left:0;
+        width:100%;
+    }
+}
 
 
 
@@ -295,55 +292,55 @@ header ul li a:hover { color: #3498DB; }
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 1280px) (max-width: 1280px) {
-        
-        .col {
-            margin-left:1%;
-        	padding:0 0%;
-        }
-        
-        .row .col:first-child {
-            margin-left:0;
-        }
-        
-        
-        
-        .span_1 {
-            width:7.41666666667%;
-        }
-        .span_2 {
-            width:15.8333333333%;
-        }
-        .span_3 {
-            width:24.25%;
-        }
-        .span_4 {
-            width:32.6666666667%;
-        }
-        .span_5 {
-            width:41.0833333333%;
-        }
-        .span_6 {
-            width:49.5%;
-        }
-        .span_7 {
-            width:57.9166666667%;
-        }
-        .span_8 {
-            width:66.3333333333%;
-        }
-        .span_9 {
-            width:74.75%;
-        }
-        .span_10 {
-            width:83.1666666667%;
-        }
-        .span_11 {
-            width:91.5833333333%;
-        }
-        .span_12 {
-            margin-left:0;
-            width:100%;
-        }
+@media screen and (min-width: 1280px) (max-width: 1280px) {
+    
+    .col {
+        margin-left:1%;
+    	padding:0 0%;
     }
+    
+    .row .col:first-child {
+        margin-left:0;
+    }
+    
+    
+    
+    .span_1 {
+        width:7.41666666667%;
+    }
+    .span_2 {
+        width:15.8333333333%;
+    }
+    .span_3 {
+        width:24.25%;
+    }
+    .span_4 {
+        width:32.6666666667%;
+    }
+    .span_5 {
+        width:41.0833333333%;
+    }
+    .span_6 {
+        width:49.5%;
+    }
+    .span_7 {
+        width:57.9166666667%;
+    }
+    .span_8 {
+        width:66.3333333333%;
+    }
+    .span_9 {
+        width:74.75%;
+    }
+    .span_10 {
+        width:83.1666666667%;
+    }
+    .span_11 {
+        width:91.5833333333%;
+    }
+    .span_12 {
+        margin-left:0;
+        width:100%;
+    }
+}
 
