@@ -1,4 +1,4 @@
-html, body { height: 100%; background: #2a2a2a; }
+html, body { background: #EFEFEF; }
 body {
 	font-family: 'lato';
 	font-weight: normal;
@@ -7,7 +7,6 @@ body {
     -webkit-font-smoothing: antialiased; 
     font-smoothing: antialiased; 
     text-rendering: optimizeLegibility;
-    color: #ffffff;
     line-height: 1.4;
 }
 /* ========================================================================== */ 
@@ -25,30 +24,17 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 /* ========================================================================== */ 
 /*   								Architecture
 /* ========================================================================== */
-.wrap, .project-wrap { 
-	position: absolute;
-	top: 0;
-	height: auto;
-	width: 100%;
-	margin-bottom: 5%;
-	background: #EFEFEF;
-}
 .inner {
 	width: 85%;
 	max-width: 1280px;
-	min-height: 50px;
 	margin: 0 auto;
 }
-#home, #porfolio, #about, #contact, #intro, .project-wrap {
-	margin: 84px auto 100px auto;
-	padding: 1.5% 0 1.5% 0;;
-	height: 100%;
-}
 footer {
-	position: absolute;
-	bottom: 0 !important;	
+	position: relative;
+	bottom: 0 ;	
 	width: 100%;
 	height: 4em;
+	margin-top: 100px;
 	font-size: 0.7em;
 	color: rgba(255,255,255,0.50);
 	z-index: 999;
@@ -104,246 +90,238 @@ header ul li a:hover { color: #3498DB; }
 	background: url(../img/logo.png) no-repeat; /*! change to svg! */ 
 	opacity: 0.7;
 }
-#logo:hover {
-	opacity: 1;
+#logo:hover { opacity: 1; }
+#social-wrap {
+	margin: 0 0 0 0;
 }
 .social {
 	width: 25px;
-	padding: 5px;
-	margin: 0 0 8px 0;
 }
 .social a {
-	width: 24px;
-	padding: 10px 5px;
+	padding: 10px;
 }
 /* ========================================================================== */ 
-/*    Heros 
+/*    										Heros 
 /* ========================================================================== */
 .hero {
 	width: 100%;
 	max-height: 600px;
 	padding: 1.5% 0 1.5% 0;
+	margin-bottom: 5%;
 }
 #intro {
 	background: url(../img/dog.jpeg) center top repeat-x #3498DB;
-	opacity: 0.3;
 	width: 100%;
 	height: 600px; 
 }
+span .extra_line{
+	position: relative;
+	bottom: 0;
+	height: 10px;
+	width: 20px;
+	background: green;
+	border-bottom: 1px solid black;
+}
 /* ========================================================================== */ 
-/*    Desctiptions 
+/*    									Look Around 
 /* ========================================================================== */
-.desc {
-	clear: both;
-}
-
-.dsec:before {
-  content: "#";
-   border: solid 1px black;
-   padding: 2px;
-   margin: 0 10px 0 0;
+#look h5 {
+	margin: 0 0 5% 38%;
+	padding: 0 0 1% 0;
+	font-size: 1.3em;
+	text-shadow: 0px 1px 0px #fff;
+	-webkit-text-shadow: 0px 1px 0px #fff;
+	-o-text-shadow: 0px 1px 0px #fff;
+	-ms-text-shadow: 0px 1px 0px #fff;
 }
 /* ========================================================================== */ 
-/*    Portfolio Grid
+/*    									Portfolio Grid
 /* ========================================================================== */
 #porfolio > h1 {
 	color: #3498DB; 
 	font-weight: 300; 
 }
-
 .thumbnail {
-	background: #3498DB;
+	min-height: 250px;
+	background: #fff;
+	border: 1px solid rgba(227,227,227,0.55) !important;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(227,227,227,0.7);
+}
+.thumbnail > a {
+	display: block;
+	position: relative;
 	min-height: 300px;
-	padding-top: 35px;
+	height: 99.999%;
+	padding: 10% 5% 5% 5%;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.thumbnail > a:hover { background: rgba(52,153,220,1.55); }
+.thumbnail > a > img {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	height: auto;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
 /* ========================================================================== */ 
-/*   Helper Classes 
+/*   Grid 
 /* ========================================================================== */
-.fr {
-	float: right;
+.col {
+    border: 0px solid rgba(0,0,0,0);
+    float: left;
+    margin-bottom: 1%;
+    margin-right: 0.6%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
 }
-.fl {
-	float: left;
+.row {
+	clear: both;
 }
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
+.row .col:first-child {
+    margin-left: 0;
 }
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
+.span_1 {
+    width: 7.41666666667%;
 }
-.hidden {
-    display: none !important;
-    visibility: hidden;
+.span_2 {
+    width: 15.8333333333%;
 }
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+.span_3 {
+    width: 24.25%;
 }
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+.span_4 {
+    width: 32.6666666667%;
 }
-.invisible {
-    visibility: hidden;
+.span_5 {
+    width: 41.0833333333%;
 }
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+.span_6 {
+    width: 49.5%;
 }
-.clearfix:after {
-    clear: both;
+.span_7 {
+    width: 57.9166666667%;
 }
-.clearfix {
-    *zoom: 1;
+.span_8 {
+    width: 66.3333333333%;
+}
+.span_9 {
+    width: 74.75%;
+}
+.span_10 {
+    width: 83.1666666667%;
+}
+.span_11 {
+    width: 91.5833333333%;
+}
+.span_12 {
+    margin-left: 0;
+    width: 100%;
 }
 /* ========================================================================== */ 
 /*   Media Queries 
 /* ========================================================================== */
-.col {
-    border:0px solid rgba(0,0,0,0);
-    float:left;
-    margin-bottom: 1%;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    -moz-background-clip:padding-box !important;
-    -webkit-background-clip:padding-box !important;
-    background-clip:padding-box !important;
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+
+
+
+
+
+/* annoying */ 
+@media  screen and (min-width: 320px) and (max-width: 959px) { 
+.inner { width: 95%; } 
+}
+/* ========================================================================== */ 
+/*   768, 959
+/* ========================================================================== */
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media  screen and (min-width: 768px) and (max-width: 959px) {
+.span_4 {
+	display: block;
+	margin-left: 0 !important;
+	width: 49% !important;
+	float: left;
+} 
+body {
+	background: aqua;
 }
 
-    /* 1. 4 Column Grid 0px - 459px 
-    ----------------------------------------------------------------------------- 
-    
-    Span 1:    24.25%
-    Span 2:    49.5%
-    Span 3:    74.75%
-    Span 4:    100%
-    
-    ----------------------------------------------------------------------------- */
-    @media screen and (min-width: 320px) and (max-width: 420px) {
-        
-        .col {
-            margin-left:1%;
-        	padding:0 0%;
-        }
-        
-        .row .col:first-child {
-            margin-left:0;
-        }
-        
-        
-        /*
-        Add your semantic classnames in alongside their corresponding spans here. e.g.
-        
-        .span_3,
-        .my_semantic_class_name {
-            ...
-        }
-        */
-        
-        .span_1 {
-            width:24.25%;
-        }
-        .span_2 {
-            width:49.5%;
-        }
-        .span_3 {
-            width:74.75%;
-        }
-        .span_4 {
-            margin-left:0;
-            width:100%;
-        }
-    }
+}
+/* ================================== 768, 959 end ======================================== */
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media  screen and (min-width: 480px) and (max-width: 767px) {
+
+.span_4 {
+	display: block;
+	margin-left: 0 !important;
+	width: 49% !important;
+	float: left;
+} 
+	
+}
+/* end 480 767 */ 
+/* ================================== 480, 767 end ======================================== */
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+
+.col {
+	margin-bottom: 2.5%;
+	padding: 0 0%;
+}
+.row .col:first-child {
+    margin-left: 0;
+}
+.span_4 {
+    margin-left: 0 !important;
+    display: block;
+    width: 100% !important;
+    clear: both;
+}    
+header {
+    background: green;
+}
+#social-wrap {
+	margin-right: 0px;
+}
+.social {
+	width: 15px;
+}
+
+.span_1, .span_2, .span_3, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10, .span_11,  
+.span_12 {
+    margin-left: 0;
+    width: 100%;
+}
+/* end 320/480 mobile */ 
 
 
 
 
-    /* 4. 12 Column Grid 1280px - Infinity 
-    ----------------------------------------------------------------------------- 
-    
-    Span 1:    7.41666666667%
-    Span 2:    15.8333333333%
-    Span 3:    24.25%
-    Span 4:    32.6666666667%
-    Span 5:    41.0833333333%
-    Span 6:    49.5%
-    Span 7:    57.9166666667%
-    Span 8:    66.3333333333%
-    Span 9:    74.75%
-    Span 10:    83.1666666667%
-    Span 11:    91.5833333333%
-    Span 12:    100%
-    
-    ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 1280px) (max-width: 1280px) {
-        
-        .col {
-            margin-left:1%;
-        	padding:0 0%;
-        }
-        
-        .row .col:first-child {
-            margin-left:0;
-        }
-        
-        
-        
-        .span_1 {
-            width:7.41666666667%;
-        }
-        .span_2 {
-            width:15.8333333333%;
-        }
-        .span_3 {
-            width:24.25%;
-        }
-        .span_4 {
-            width:32.6666666667%;
-        }
-        .span_5 {
-            width:41.0833333333%;
-        }
-        .span_6 {
-            width:49.5%;
-        }
-        .span_7 {
-            width:57.9166666667%;
-        }
-        .span_8 {
-            width:66.3333333333%;
-        }
-        .span_9 {
-            width:74.75%;
-        }
-        .span_10 {
-            width:83.1666666667%;
-        }
-        .span_11 {
-            width:91.5833333333%;
-        }
-        .span_12 {
-            margin-left:0;
-            width:100%;
-        }
-    }
+
+
+/* ========================================================================== */ 
+/*  Retina
+/* ========================================================================== */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
 
