@@ -10,7 +10,7 @@ body {
     line-height: 1.4;
 }
 /* ========================================================================== */ 
-/*   								Typography
+/*   						Typography
 /* ========================================================================== */
 h1, h2, h3, h4, h5, h6 { font-family: 'lato', helvetica, arial, sans-serif; color: #393939; }
 h1 {margin: 0; font-size: 3.75em; line-height: 1.2em; margin-bottom: 0.4em} /* 60px / 72px */
@@ -22,7 +22,7 @@ h6 {margin: 0; font-size: 1.125em; line-height: 1.333333333333333333333333333333
 p, ul, blockquote, pre, td, th, label {margin: 0; font-size: 1em; margin-bottom: 1.5em; color: #393939} /* 16px / 24px */
 small, p.small {margin: 0; font-size: 0.875em; line-height: 1.7142857142857142857142857142857em; margin-bottom: 1.7142857142857142857142857142857em} /* 14px / 24px */
 /* ========================================================================== */ 
-/*   								Architecture
+/*   					   Architecture
 /* ========================================================================== */
 .inner {
 	width: 85%;
@@ -41,7 +41,7 @@ footer {
 	background: rgba(0,0,0,0.98);
 }
 /* ========================================================================== */ 
-/*  								 Header + Nav 
+/*  						Header + Nav 
 /* ========================================================================== */
 header {
 	top: 0;
@@ -94,55 +94,55 @@ header ul li a:hover { color: #3498DB; }
 #social-wrap {
 	margin: 0 0 0 0;
 }
-.social {
-	width: 25px;
-}
-.social a {
-	padding: 10px;
-}
+.social { width: 25px; }
+.social a { padding: 10px;}
 /* ========================================================================== */ 
-/*    										Heros 
+/*    						  Heros 
 /* ========================================================================== */
 .hero {
 	width: 100%;
-	max-height: 600px;
+	max-height: 500px;
 	padding: 1.5% 0 1.5% 0;
 	margin-bottom: 5%;
 }
 #intro {
 	background: url(../img/dog.jpeg) center top repeat-x #3498DB;
 	width: 100%;
-	height: 600px; 
-}
-span .extra_line{
-	position: relative;
-	bottom: 0;
-	height: 10px;
-	width: 20px;
-	background: green;
-	border-bottom: 1px solid black;
+	height: 500px; 
 }
 /* ========================================================================== */ 
-/*    									Look Around 
+/*    						Look Around 
 /* ========================================================================== */
+#look {
+	position: relative;
+	width: 400px;
+}
 #look h5 {
-	margin: 0 0 5% 38%;
 	padding: 0 0 1% 0;
-	font-size: 1.3em;
+	font-size: 1.5em;
+	text-align: center;
+	clear: both;
+	color: #555555;
 	text-shadow: 0px 1px 0px #fff;
 	-webkit-text-shadow: 0px 1px 0px #fff;
 	-o-text-shadow: 0px 1px 0px #fff;
 	-ms-text-shadow: 0px 1px 0px #fff;
 }
+.extra_line {
+	width: 100px;
+	margin-left: 36.999%;
+	margin-bottom: 25px;
+	background: green;
+	border-bottom: 1px solid #dcdcdc;
+}
 /* ========================================================================== */ 
-/*    									Portfolio Grid
+/*    						Portfolio Grid
 /* ========================================================================== */
 #porfolio > h1 {
 	color: #3498DB; 
 	font-weight: 300; 
 }
 .thumbnail {
-	min-height: 250px;
 	background: #fff;
 	border: 1px solid rgba(227,227,227,0.55) !important;
 	-webkit-box-shadow: 0px 1px 1px 0px rgba(227,227,227,0.7);
@@ -150,32 +150,49 @@ span .extra_line{
 .thumbnail > a {
 	display: block;
 	position: relative;
-	min-height: 300px;
-	height: 99.999%;
-	padding: 10% 5% 5% 5%;
+	height: 100%;
+	padding: 10% 5% 1% 5%;
+	text-decoration: none;
 	-webkit-transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in;
 }
-.thumbnail > a:hover { background: rgba(52,153,220,1.55); }
+.thumbnail a:hover {
+	background: rgba(52,153,220, 0.90); 
+	color: #ffffff;
+}
 .thumbnail > a > img {
 	display: block;
 	margin: 0 auto;
 	width: 80%;
 	height: auto;
+	margin-bottom: 5%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
 }
+.thumbnail  .title {
+	font-size: 1.1em;
+	color: #979797;
+}
+.thumbnail .category {
+	margin-bottom: 15px;
+	font-size: 0.8em;
+	letter-spacing: 1px; 
+	color: #c3c3c3;
+}
+.thumbnail a:hover .title, .thumbnail a:hover .category { 
+	color: #ffffff !important;
+}
 /* ========================================================================== */ 
-/*   Grid 
+/*   								Grid 
 /* ========================================================================== */
 .col {
     border: 0px solid rgba(0,0,0,0);
     float: left;
-    margin-bottom: 1%;
+    margin-bottom: 0.6%;
     margin-right: 0.6%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -257,16 +274,11 @@ span .extra_line{
 	width: 49% !important;
 	float: left;
 } 
-body {
-	background: aqua;
-}
 
-}
-/* ================================== 768, 959 end ======================================== */
+}/* ================================== 768, 959 end ======================================== */
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media  screen and (min-width: 480px) and (max-width: 767px) {
-
 .span_4 {
 	display: block;
 	margin-left: 0 !important;
@@ -274,9 +286,7 @@ body {
 	float: left;
 } 
 	
-}
-/* end 480 767 */ 
-/* ================================== 480, 767 end ======================================== */
+}/* ================================== 480, 767 end ======================================== */
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
 
@@ -296,20 +306,24 @@ body {
 header {
     background: green;
 }
+header ul li { margin: 0 0 0 15px; }
+header ul li:first-child { margin-left: 0; }
+header ul li a {
+	padding: 10px 10px;
+	font-size: 0.99em;
+}
 #social-wrap {
-	margin-right: 0px;
+	margin-right: 20px;
 }
 .social {
 	width: 15px;
 }
-
 .span_1, .span_2, .span_3, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10, .span_11,  
 .span_12 {
     margin-left: 0;
     width: 100%;
+}/* ================================== 320, 479 end ======================================== */
 }
-/* end 320/480 mobile */ 
-
 
 
 
