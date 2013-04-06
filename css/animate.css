@@ -70,6 +70,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-delay: 1.5s !important;
 	animation-delay: 1.5s !important;
 }
+.delaySix {
+	-webkit-animation-delay:  1.9s !important;
+	-moz-animation-delay:  1.9s !important;
+	-ms-animation-delay: 1.9s !important;
+	-o-animation-delay: 1.9s !important;
+	animation-delay: 1.9s !important;
+}
+.delaySeven {
+	-webkit-animation-delay:  2.3s !important;
+	-moz-animation-delay:  2.3s !important;
+	-ms-animation-delay: 2.3s !important;
+	-o-animation-delay: 2.3s !important;
+	animation-delay: 2.3s !important;
+}
 .animated.hinge {
 	-webkit-animation-duration: 2s;
 	-moz-animation-duration: 2s;
