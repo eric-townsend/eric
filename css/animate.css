@@ -34,7 +34,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-name: fadeIn;
 	animation-name: fadeIn;
 }
-
 .delayOne {
 	-webkit-animation-delay:  0.2s !important;
 	-moz-animation-delay:  0.2s !important;
@@ -42,7 +41,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-delay: 0.2s !important;
 	animation-delay: 0.2s !important;
 }
-.delayTow {
+.delayTwo {
 	-webkit-animation-delay:  0.5s !important;
 	-moz-animation-delay:  0.5s !important;
 	-ms-animation-delay: 0.5s !important;
@@ -91,7 +90,47 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-duration: 2s;
 	animation-duration: 2s;
 }
-
+/* ====================================================*/ 
+/*===========    Pulse Black and white = ==============*/ 
+/* ====================================================*/ 
+@-webkit-keyframes BWfade {
+	0% {
+        -webkit-filter: grayscale(100%); 
+    }
+	100% {
+       -webkit-filter: grayscale(0%); 
+    }
+}
+@-moz-keyframes BWfade {
+	0% {
+        -webkit-filter: grayscale(100%); 
+    }
+	100% {
+       -webkit-filter: grayscale(0%); 
+    }
+}
+@-o-keyframes BWfade {
+	0% {
+        -webkit-filter: grayscale(100%); 
+    }
+	100% {
+       -webkit-filter: grayscale(0%); 
+    }
+}
+@keyframes BWfade {
+	0% {
+        -webkit-filter: grayscale(100%); 
+    }
+	100% {
+       -webkit-filter: grayscale(0%); 
+    }
+}
+.BWfade {
+	-webkit-animation: BWfade 3.5s ease-in;  
+	-moz-animation-name: BWfade 3.5s ease-in;
+	-o-animation-name: BWfade 3.5s ease-in;
+	animation-name: BWfade 3.5s ease-in;
+}
 /* ===================================*/ 
 /*===========    Flash  ==============*/ 
 /* ===================================*/ 
