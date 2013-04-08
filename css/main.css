@@ -91,26 +91,27 @@ header ul li a:hover { color: #3498DB; }
 	opacity: 0.7;
 }
 #logo:hover { opacity: 1; }
-#social-wrap {
-	margin: 0 0 0 0;
-}
+#social-wrap { margin: 0 0 0 0; }
 .social { width: 25px; }
 .social a { padding: 10px;}
 /* ========================================================================== */ 
-/*    						  Heros 
+/*    						  Home Hero 
 /* ========================================================================== */
 .hero {
 	width: 100%;
-	padding: 1.5% 0 1.5% 0;
-	margin-bottom: 5%;
+	min-height: 400px;
+	padding: 1.5% 0 0 0;
+	margin-bottom: 0%;
+	overflow: hidden;
 }
 #intro {
-	background: url(../img/city.jpeg) center top repeat-x #3498DB;
-	width: 100%;
+	background: url(../img/city.jpg) no-repeat;
+	background-size: cover;
+	width: 100% !important;
 	height: 500px; 
 }
 #intro_middle {
-	width: 51%;
+	width: 47%;
 	margin: 5.5% auto 0 auto;
 	text-align: left;
 }
@@ -120,7 +121,7 @@ header ul li a:hover { color: #3498DB; }
 	color: #ededed;
 	font-size: 1.5em;
 	line-height: 1.5em;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.11em;
 }
 #intro h2 {
 	margin-bottom: 2.5%;
@@ -135,13 +136,12 @@ header ul li a:hover { color: #3498DB; }
 #intro_name {
 	text-transform: uppercase;
 }
-
 /* ========================================================================== */ 
-/*    						Look Around 
+/*    						Have a Look Around 
 /* ========================================================================== */
 #look {
 	width: 48%;
-	margin: 3% auto 3% auto;
+	margin: 3% auto 2% auto;
 	text-align: left;
 }
 #look h5 {
@@ -157,7 +157,7 @@ header ul li a:hover { color: #3498DB; }
 }
 .extra_line {
 	width: 100px;
-	margin: 3% auto 4% auto;
+	margin: 3% auto 3% auto;
 	background: green;
 	border-bottom: 1px solid #dcdcdc;
 }
@@ -214,6 +214,12 @@ header ul li a:hover { color: #3498DB; }
 	color: #ffffff !important;
 }
 /* ========================================================================== */ 
+/*   								Emirates 
+/* ========================================================================== */
+#emirates_intro {	
+	height: 500px;
+}
+/* ========================================================================== */ 
 /*   								Grid 
 /* ========================================================================== */
 .col {
@@ -230,6 +236,9 @@ header ul li a:hover { color: #3498DB; }
 }
 .row {
 	clear: both;
+}
+.last {
+	margin-right: 0;
 }
 .row .col:first-child {
     margin-left: 0;
@@ -360,8 +369,9 @@ header ul li a {
 	width: 100%;
 }
 #intro_middle {
-	width: 100%;
+	width: 100% !important;
 }
+
 
 /* ================================== 320, 479 end ======================================== */
 }
