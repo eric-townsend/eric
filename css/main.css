@@ -110,7 +110,7 @@ header ul li a:hover { color: #3498DB; }
 	height: 500px; 
 }
 #intro_middle {
-	width: 51%;
+	max-width: 50%;
 	margin: 5.5% auto 0 auto;
 	text-align: left;
 }
