@@ -105,7 +105,7 @@ header ul li a:hover { color: #3498DB; }
 	overflow: hidden;
 }
 #intro {
-	background: url(../img/city.jpg) no-repeat;
+	background: url(../img/city.jpg) no-repeat bottom;
 	background-size: cover;
 	width: 100% !important;
 	height: 500px; 
@@ -135,6 +135,11 @@ header ul li a:hover { color: #3498DB; }
 }
 #intro_name {
 	text-transform: uppercase;
+}
+#intro-arrow {
+	margin: 0 0 0 0;
+	width: 30px;
+	font-size: 0.5em;
 }
 /* ========================================================================== */ 
 /*    						Have a Look Around 
