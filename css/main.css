@@ -9,6 +9,24 @@ body {
     text-rendering: optimizeLegibility;
     line-height: 1.4;
 }
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: #000;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+body {
+    border-left: 10px solid #000;
+    border-right: 10px solid #000;
+}
 /* ========================================================================== */ 
 /*   						Typography
 /* ========================================================================== */
@@ -172,6 +190,17 @@ header ul li a:hover { color: #3498DB; }
 #porfolio > h1 {
 	color: #3498DB; 
 	font-weight: 300; 
+}
+h1:before, h2:after {
+    font-family: "fontello", serif;
+    content: "\00d7";  /* Some fancy character */
+    color: #c83f3f;
+}
+h1:before {
+    margin-right: 10px;
+}
+h1:after {
+    margin-left: 10px;
 }
 .thumbnail {
 	background: #fff;
