@@ -28,7 +28,7 @@ $(document).ready(function() {
  
     $("body").fadeIn(700);
  
-    $("a.trans").click(function(event){
+    $("a").click(function(event){
         event.preventDefault();
         linkLocation = this.href;
         $("body").fadeOut(500, redirectPage);      
@@ -39,23 +39,10 @@ $(document).ready(function() {
     }
 });
 /* ======================= 
- 			resize 		   
+ 			lazy load 		   
  ======================= */ 
 
-$(document).ready(function(){
-	resizeDiv();
-});
-
-window.onresize = function(event) {
-	resizeDiv();
-}
-
-function resizeDiv() {
-	vph = $(window).height(); 
-	$('#home').css({'height': vph  + '%'});
-};
 
 
- 
 
 

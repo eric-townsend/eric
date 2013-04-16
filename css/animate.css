@@ -90,6 +90,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-duration: 2s;
 	animation-duration: 2s;
 }
+* {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+}
 /* ====================================================*/ 
 /*===========    Pulse Black and white = ==============*/ 
 /* ====================================================*/ 
