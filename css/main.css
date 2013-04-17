@@ -33,7 +33,6 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 }
 .item {
 	margin-bottom: 0.6% !important;
-	
 }
 footer {
 	position: relative;
@@ -146,24 +145,28 @@ header ul li a:hover { color: #3498DB; }
 	font-size: 0.5em;
 }
 /* ========================================================================== */ 
-/*    						Have a Look Around 
+/*    						Have a Look Around / sub titles 
 /* ========================================================================== */
 #look {
 	width: 48%;
 	margin: 3% auto 2% auto;
-	text-align: left;
+	text-align: center;
 }
-#look h5 {
-	padding: 0 0 0.8% 0;
+#look h5,.sub-title {
 	font-size: 1.5em;
 	text-align: center;
-	clear: both;
 	color: #555555;
 	text-shadow: 0px 1px 0px #fff;
 	-webkit-text-shadow: 0px 1px 0px #fff;
 	-o-text-shadow: 0px 1px 0px #fff;
 	-ms-text-shadow: 0px 1px 0px #fff;
+	clear: both;
 }
+.sub-title {
+	margin-top: 3%;
+	text-transform: capitalize;
+}
+#look h5 { padding: 0 0 0.8% 0; }
 .extra_line {
 	width: 100px;
 	margin: 3% auto 3% auto;
