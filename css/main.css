@@ -26,13 +26,16 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 /* ========================================================================== */
 .inner {
 	width: 85%;
-	height: auto;
+	height: auto !important;
 	min-height: 100px;
 	max-width: 1280px;
 	margin: 0 auto !important;
 }
 .item {
 	margin-bottom: 0.6% !important;
+}
+.bottom {
+	margin-bottom: 8% !important;
 }
 footer {
 	position: relative;
@@ -92,7 +95,7 @@ header ul li a:hover { color: #3498DB; }
 	margin-left: 0px;
 	padding: 1px 8px 1px 8px;
 	text-indent: -999em;
-	background: url(../img/logo.png) no-repeat; /*! change to svg! */ 
+	background: url(../img/logo.png) no-repeat; 
 	opacity: 0.7;
 }
 #logo:hover { opacity: 1; }
@@ -104,7 +107,6 @@ header ul li a:hover { color: #3498DB; }
 /* ========================================================================== */
 .hero {
 	width: 100%;
-	min-height: 400px;
 	padding: 1.5% 0 0 0;
 	margin-bottom: 5%;
 	overflow: hidden;
@@ -170,7 +172,6 @@ header ul li a:hover { color: #3498DB; }
 .extra_line {
 	width: 100px;
 	margin: 3% auto 3% auto;
-	background: green;
 	border-bottom: 1px solid #dcdcdc;
 }
 /* ========================================================================== */ 
@@ -233,6 +234,61 @@ header ul li a:hover { color: #3498DB; }
 	color: #ffffff !important;
 }
 /* ========================================================================== */ 
+/*   								project description 
+/* ========================================================================== */
+
+
+/* ========================================================================== */ 
+/*   								pagination 
+/* ========================================================================== */
+.pagination {
+	color: #555555;
+}
+.pagination span {
+	font-size: 1.5em;
+	text-shadow: 0px 1px 0px #fff;
+	-webkit-text-shadow: 0px 1px 0px #fff;
+	-o-text-shadow: 0px 1px 0px #fff;
+	-ms-text-shadow: 0px 1px 0px #fff;
+}
+#current_number {
+	color: rgba(52,153,220, 0.90);
+}
+.blue_btn {
+	color: #fff;
+	padding: 10px 15px 10px 15px;
+	font-size: 0.79em;
+	line-height: 20px;
+	background: rgba(52,153,220, 0.90);
+	border: 1px solid rgba(41,134,196,0.9);
+}
+.blue_btn:hover { background: rgba(41,134,196,0.9); }
+.blue_btn >i {
+	margin-top: 4px;
+	padding: 0;
+}
+#prev_project {
+	border-right-color: rgba(255,255,255,0.10);
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+#next_project {
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.btn_disable {
+	pointer-events: none;
+	opacity: 0.5;
+}
+/* ========================================================================== */ 
 /*   								Emirates 
 /* ========================================================================== */
 #emirates_into {
@@ -269,48 +325,20 @@ header ul li a:hover { color: #3498DB; }
     -webkit-background-clip: padding-box !important;
     background-clip: padding-box !important;
 }
-.row {
-	clear: both;
-}
-.last {
-	margin-right: 0;
-}
-.row .col:first-child {
-    margin-left: 0;
-}
-.span_1 {
-    width: 7.41666666667%;
-}
-.span_2 {
-    width: 15.8333333333%;
-}
-.span_3 {
-    width: 24.25%;
-}
-.span_4 {
-    width: 32.6666666667%;
-}
-.span_5 {
-    width: 41.0833333333%;
-}
-.span_6 {
-    width: 49.5%;
-}
-.span_7 {
-    width: 57.9166666667%;
-}
-.span_8 {
-    width: 66.3333333333%;
-}
-.span_9 {
-    width: 74.75%;
-}
-.span_10 {
-    width: 83.1666666667%;
-}
-.span_11 {
-    width: 91.5833333333%;
-}
+.row { clear: both; }
+.last { margin-right: 0; }
+.row .col:first-child { margin-left: 0; }
+.span_1 { width: 7.41666666667%; }
+.span_2 { width: 15.8333333333%; }
+.span_3 { width: 24.25%; }
+.span_4 { width: 32.6666666667%; }
+.span_5 { width: 41.0833333333%; }
+.span_6 { width: 49.5%; }
+.span_7 { width: 57.9166666667%; }
+.span_8 { width: 66.3333333333%; }
+.span_9 { width: 74.75%; }
+.span_10 { width: 83.1666666667%; }
+.span_11 { width: 91.5833333333%; }
 .span_12 {
     margin-left: 0;
     width: 100%;
@@ -345,15 +373,9 @@ header ul li a:hover { color: #3498DB; }
 	width: 49% !important;
 	float: left;
 } 
-#intro_middle {
-	width: 55%;
-}
-#intro h4 {
-	font-size: 1em;
-}
-#emirates_logo_wrap .inner img {
-	 margin: 0 0 0 25%; 
-}
+#intro_middle { width: 55%; }
+#intro h4 { font-size: 1em; }
+#emirates_logo_wrap .inner img { margin: 0 0 0 25%; }
 
 }/* ================================== 768, 959 end ======================================== */
 
@@ -365,12 +387,8 @@ header ul li a:hover { color: #3498DB; }
 	width: 49% !important;
 	float: left;
 }
-#intro_middle {
-	width: 80%;
-} 
-#emirates_logo_wrap .inner img {
-	margin: 0 0 0 10%;
-}
+#intro_middle { width: 80%; } 
+#emirates_logo_wrap .inner img { margin: 0 0 0 10%; }
 	
 }/* ================================== 480, 767 end ======================================== */
 
@@ -401,20 +419,14 @@ header ul li a {
 #social-wrap {
 	margin-right: 20px;
 }
-.social {
-	width: 15px;
-}
+.social { width: 15px; }
 .span_1, .span_2, .span_3, .span_5, .span_6, .span_7, .span_8, .span_9, .span_10, .span_11,  
 .span_12 {
     margin-left: 0;
     width: 100%;
 }
-#look {
-	width: 100%;
-}
-#intro_middle {
-	width: 100% !important;
-}
+#look { width: 100%; }
+#intro_middle { width: 100% !important; }
 #emirates_logo_wrap .inner img {
 	 margin: 0 0 0 1%;
 	 width: 90%; 
