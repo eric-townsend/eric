@@ -31,12 +31,8 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 	max-width: 1280px;
 	margin: 0 auto !important;
 }
-.item {
-	margin-bottom: 0.6% !important;
-}
-.bottom {
-	margin-bottom: 8% !important;
-}
+.item { margin-bottom: 0.6% !important; }
+.bottom { margin-bottom: 8% !important; }
 footer {
 	position: relative;
 	bottom: 0 ;	
@@ -234,16 +230,23 @@ header ul li a:hover { color: #3498DB; }
 	color: #ffffff !important;
 }
 /* ========================================================================== */ 
-/*   								project description 
+/*   							project description 
 /* ========================================================================== */
-
-
+.project_desc {
+	margin-top: 3% !important;
+	margin-bottom: 3% !important;
+}
+.project_desc h2,p {
+	color: #555555;
+	text-shadow: 0px 1px 0px #fff;
+	-webkit-text-shadow: 0px 1px 0px #fff;
+	-o-text-shadow: 0px 1px 0px #fff;
+	-ms-text-shadow: 0px 1px 0px #fff;
+}
 /* ========================================================================== */ 
 /*   								pagination 
 /* ========================================================================== */
-.pagination {
-	color: #555555;
-}
+.pagination { color: #555555; }
 .pagination span {
 	font-size: 1.5em;
 	text-shadow: 0px 1px 0px #fff;
@@ -251,9 +254,7 @@ header ul li a:hover { color: #3498DB; }
 	-o-text-shadow: 0px 1px 0px #fff;
 	-ms-text-shadow: 0px 1px 0px #fff;
 }
-#current_number {
-	color: rgba(52,153,220, 0.90);
-}
+#current_number { color: rgba(52,153,220, 0.90); }
 .blue_btn {
 	color: #fff;
 	padding: 10px 15px 10px 15px;
@@ -291,9 +292,6 @@ header ul li a:hover { color: #3498DB; }
 /* ========================================================================== */ 
 /*   								Emirates 
 /* ========================================================================== */
-#emirates_into {
-	
-}
 #emirates_logo_wrap {
 	width: 100%;
 	height: auto;
@@ -307,14 +305,72 @@ header ul li a:hover { color: #3498DB; }
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-#emirates_history {
-	width: 100%;	
+#emirates_history { width: 100%;}
+/* ========================================================================== */ 
+/*   								Tenderloin 
+/* ========================================================================== */
+.tl_wrap {
+	width: 100%;
+	background: #56A7D3;
+	margin-bottom: 0;
+}
+.tl_wrap .inner{
+	margin-bottom: 0;
+	padding-top: 4%;
+	padding-bottom: 0;
+}
+.tl_wrap img {
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+#tenderloin_logo_wrap img {
+	width: 50%;
+	margin-left: 25%;
+	padding: 5% 0 5% 0;
+}
+#tl_quotes {
+	padding-bottom: 5%;
+}
+/* ========================================================================== */ 
+/*   								Cutty sark 
+/* ========================================================================== */
+#cutty_hero {
+	background: url(../img/projects/cutty/cutty_noise.jpg);
+}
+#cutty_hero img { margin-left: 33%; }
+/* ========================================================================== */ 
+/*   								50 Logos 
+/* ========================================================================== */
+#logos_hero {
+	height: 500px;
+	width: 100%;
+	background: url(../img/projects/50_logos/50_logos_hero_01.png) no-repeat center;
+	background-size: cover;
+}
+/* ========================================================================== */ 
+/*   								Gent 
+/* ========================================================================== */
+#gent_logo_wrap {
+	background: url(../img/projects/gent/sir_fitz_bg_02.jpg);
+	padding-bottom: 0;
+}
+#gent_logo_wrap img {
+	margin-left: 28%;
+	margin-bottom: 0 !important;
+}
+/* ========================================================================== */ 
+/*   								Edge 
+/* ========================================================================== */
+#edge_hero {
+	height: 500px;
+	width: 100%;
+	background: url(../img/projects/edge/edge_01.png) no-repeat center bottom; 
+	background-size: cover;
 }
 /* ========================================================================== */ 
 /*   								Grid 
 /* ========================================================================== */
 .col {
-    border: 0px solid rgba(0,0,0,0);
     float: left;
     margin-bottom: 0.6%;
     margin-right: 0.6%;
@@ -355,10 +411,8 @@ header ul li a:hover { color: #3498DB; }
 
 
 
-
-
 /* annoying */ 
-@media  screen and (min-width: 320px) and (max-width: 959px) { 
+@media  screen and (min-width: 320px) and (max-width: 800px) { 
 .inner { width: 95%; } 
 }
 /* ========================================================================== */ 
@@ -376,6 +430,8 @@ header ul li a:hover { color: #3498DB; }
 #intro_middle { width: 55%; }
 #intro h4 { font-size: 1em; }
 #emirates_logo_wrap .inner img { margin: 0 0 0 25%; }
+#gent_logo_wrap img { margin-left: 20%; }
+
 
 }/* ================================== 768, 959 end ======================================== */
 
@@ -389,6 +445,8 @@ header ul li a:hover { color: #3498DB; }
 }
 #intro_middle { width: 80%; } 
 #emirates_logo_wrap .inner img { margin: 0 0 0 10%; }
+#cutty_hero img { margin-left: 20%; }
+#gent_logo_wrap img { margin-left: 13%; width: 80%; }
 	
 }/* ================================== 480, 767 end ======================================== */
 
@@ -431,7 +489,11 @@ header ul li a {
 	 margin: 0 0 0 1%;
 	 width: 90%; 
 }
-
+#cutty_hero img {
+	width: 90%;
+	margin-left: 8%; 
+}
+#gent_logo_wrap img { margin-left: 13%; width: 80%; }
 /* ================================== 320, 479 end ======================================== */
 }
 

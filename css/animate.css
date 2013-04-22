@@ -16,11 +16,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-ms-animation-fill-mode: both;
 	-o-animation-fill-mode: both;
 	animation-fill-mode: both;
+	
 	-webkit-animation-duration: 1s;
 	-moz-animation-duration: 1s;
 	-ms-animation-duration: 1s;
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
+	
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
 }
 .wrap {
 	-webkit-animation-delay:  0.5s !important;
@@ -136,6 +142,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-moz-animation-name: BWfade 3.5s ease;
 	-o-animation-name: BWfade 3.5s ease;
 	animation-name: BWfade 3.5s ease;
+	
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
 }
 /* ===================================*/ 
 /*===========    Flash  ==============*/ 

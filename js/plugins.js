@@ -38,9 +38,7 @@ $(document).ready(function() {
         window.location = linkLocation;
     }
 });
-/* ======================= 
- 			lazy load 		   
- ======================= */ 
+
 
 
 
