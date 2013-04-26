@@ -367,15 +367,14 @@ header ul li a:hover { color: #3498DB; }
 /* ========================================================================== */ 
 /*   								About 
 /* ========================================================================== */
-
 #about {
-	margin: 3% auto 0 auto;
+	margin: 1.8% auto 0 auto;
 	text-align: center;
 }
 #me {
+	width: 85%;
 	vertical-align: middle;
 	margin: 0 auto !important;
-	margin-top: 3%;
 	z-index: 1;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -384,27 +383,64 @@ header ul li a:hover { color: #3498DB; }
 }
 #about h2 {
 	position: relative;
-	bottom: 50px;
-	font-size: 2em;
+	bottom: 60px;
+	margin-bottom: 0;
+	font-size: 2.5em;
 	color: #fff;
 	padding: 3% 0 3% 0;
 	z-index: 999;
 	background: rgba(39,127,186,0.9);
-	text-shadow: 0px 1px 0px rgba(39,127,186,1);
-	-webkit-text-shadow: 0px 1px 0px rgba(39,127,186,1);
-	-o-text-shadow: 0px 1px 0px rgba(39,127,186,1);
-	-ms-text-shadow: 0px 1px 0px rgba(39,127,186,1);
+	text-shadow: 0px 1px 0px rgba(36,127,188,1);
+	-webkit-text-shadow: 0px 1px 0px rgba(36,127,188,1);
+	-o-text-shadow: 0px 1px 0px rgba(36,127,188,1);
+	-ms-text-shadow: 0px 1px 0px rgba(36,127,188,1);
 }
-
+#about p {
+	position: relative;
+	bottom: 30px;
+	font-size: 1.2em;
+	line-height: 1.6em;
+	text-align: left;
+}
 /* ========================================================================== */ 
 /*   								Contact 
 /* ========================================================================== */
 #contact_wrap  {
 	width: 50%;
+	margin-top: 3%;
 	margin: 0 auto;
-	height: 100px;
 	border: 1px solid #000;
 }
+input {
+	border: rgba(36,127,188,1);
+}
+form { margin: 0 0 18px; }
+form label { 
+	display: block;  
+	font-size: 1em; 
+	line-height: 1.625em; 
+	cursor: pointer; 
+	margin-bottom: 9px; 
+}
+form label.inline {
+	display: inline-block; 
+	padding-right: 20px; 
+}
+form dt { margin: 0; }
+form textarea { height: 150px; }
+form ul, form ul li {
+	margin-left: 0; 
+	list-style-type: none;
+}
+form fieldset { 
+	border-style: solid; 
+	border-width: 0.0625em; 
+	padding: 1.5625em;
+	border-color: #d8d8d8;
+	margin: 18px 0; 
+}
+
+
 /* ========================================================================== */ 
 /*   								Grid 
 /* ========================================================================== */
@@ -470,7 +506,6 @@ header ul li a:hover { color: #3498DB; }
 #intro h4 { font-size: 1em; }
 #emirates_logo_wrap .inner img { margin: 0 0 0 25%; }
 #gent_logo_wrap img { margin-left: 20%; }
-
 
 }/* ================================== 768, 959 end ======================================== */
 
