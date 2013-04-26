@@ -37,7 +37,7 @@
 				</ul><!-- end ul social wrap--> 
 			</nav><!-- end nav -->  
 		</header><!-- end header -->
-		<section class="ani fadeIn delayOne">
+		<section class="ani fadeInUp delayOne">
 			<div class="inner item">
 				<img class="ani" src="img/projects/emirates/emirates_hero_01.png"/>
 			</div>
@@ -50,7 +50,7 @@
 		<!-- end emirates logo -->
 		
 		<div class="inner project_desc ani fadeInUp delayFive cf">	
-			<h2 class="span_3 col">Emirates</h2>
+			<h2 class="span_4 col">Emirates</h2>
 			<p class="span_4 col">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas malesuada neque ut mattis. Nunc sodales adipiscing ante eu pellentesque. Vivamus mattis ultricies mattis. Sed tristique ornare nulla, eu congue tellus bibendum non. Praesent sed tellus neque, id bibendum eros. Integer cursus iaculis faucibus. Nullam non dolor metus,</p>
 			<p class="span_4 col last">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas malesuada neque ut mattis. Nunc sodales adipiscing ante eu pellentesque. Vivamus mattis ultricies mattis. Sed tristique ornare nulla, eu congue tellus bibendum non. Praesent sed tellus neque, id bibendum eros. Integer cursus iaculis faucibus. Nullam non dolor metus,</p>
 		</div><!-- end description -->
@@ -102,7 +102,22 @@
 		<img class="inner span_12 col item lazy" src="img/lazy.gif" data-original="img/projects/emirates/emirates_app_17.png" />
 		<img class="inner span_12 col item lazy bottom" src="img/lazy.gif" data-original="img/projects/emirates/emirates_app_18.png" />
 		</div><!-- end div --> 
-		<hr class="clear"/> 
+		<hr class="clear"/>
+		<div class="inner span_11">
+			<div class="flexslider bottom">
+				<ul class="slides span_12 col item">
+					<li><img class="span_12 lazy" src="img/projects/emirates/emirates_research_19.png"/></li>
+					<li><img class="span_12 lazy" src="img/projects/emirates/emirates_research_20.png"/></li>
+					<li><img class="span_12 lazy" src="img/projects/emirates/emirates_research_21.png"/></li>
+					<li><img class="span_12 lazy" src="img/projects/emirates/emirates_research_22.png"/></li>
+					<li><img class="span_12 lazy" src="img/projects/emirates/emirates_research_23.png"/></li>
+					<li><img class="span_12 lazy" src="img/projects/emirates/emirates_research_24.png"/></li>
+					<li><img class="span_12 lazy" src="img/projects/emirates/emirates_research_25.png"/></li>
+					<li><img class="span_12 lazy" src="img/projects/emirates/emirates_research_26.png"/></li>
+					<li><img class="span_12 lazy" src="img/projects/emirates/emirates_research_27.png"/></li>
+				</ul>
+			</div><!-- end slider --> 
+ 
 				
 		<!-- ========== pagination ========== -->
 		<div class="pagination inner">
@@ -122,6 +137,9 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
        <script>
+       	$(window).load(function() {
+			$('.flexslider').flexslider();
+		});
 		$(function() {
 			$(".lazy").lazyload({ 
 				placeholder : "img/lazy.gif", 
