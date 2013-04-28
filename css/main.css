@@ -243,7 +243,7 @@ header ul li a:hover { color: #3498DB; }
 	-ms-text-shadow: 0px 1px 0px #fff;
 }
 /* ========================================================================== */ 
-/*   								pagination 
+/*   								pagination / buttons
 /* ========================================================================== */
 .pagination { color: #555555; }
 .pagination span {
@@ -287,6 +287,22 @@ header ul li a:hover { color: #3498DB; }
 .btn_disable {
 	pointer-events: none;
 	opacity: 0.5;
+}
+.launch_btn {
+	padding: 1.5% 2% 1.5% 2%;
+	color: #fff;
+	font-size: 1.1em;
+	border-bottom: 1px solid #fff;
+	background: #27AE60;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.launch_btn:hover { background: #25a65b; }
+.launch_btn i {
+	position: relative;
+	top: 2px;
+	padding: 0 0 0 1.2%;
 }
 /* ========================================================================== */ 
 /*   								Emirates 
@@ -354,6 +370,9 @@ header ul li a:hover { color: #3498DB; }
 #gent_logo_wrap img {
 	margin-left: 28%;
 	margin-bottom: 0 !important;
+}
+#gent_btn {
+	margin-top: 10%;
 }
 /* ========================================================================== */ 
 /*   								Edge 
@@ -439,8 +458,6 @@ form fieldset {
 	border-color: #d8d8d8;
 	margin: 18px 0; 
 }
-
-
 /* ========================================================================== */ 
 /*   								Grid 
 /* ========================================================================== */
@@ -518,7 +535,7 @@ form fieldset {
 	float: left;
 }
 #intro_middle { width: 80%; } 
-#emirates_logo_wrap .inner img { margin: 0 0 0 10%; }
+#emirates_logo_wrap .inner img { margin: 0 0 0 15%; }
 #cutty_hero img { margin-left: 20%; }
 #gent_logo_wrap img { margin-left: 13%; width: 80%; }
 #about { width: 75%; margin: 0 auto;}
