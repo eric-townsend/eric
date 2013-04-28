@@ -243,7 +243,7 @@ header ul li a:hover { color: #3498DB; }
 	-ms-text-shadow: 0px 1px 0px #fff;
 }
 /* ========================================================================== */ 
-/*   								pagination 
+/*   						   pagination / buttons
 /* ========================================================================== */
 .pagination { color: #555555; }
 .pagination span {
@@ -288,6 +288,26 @@ header ul li a:hover { color: #3498DB; }
 	pointer-events: none;
 	opacity: 0.5;
 }
+.launch_btn {
+	padding: 1.5% 2% 1.5% 2%;
+	color: #fff;
+	font-size: 1.1em;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.launch_btn i {
+	position: relative;
+	top: 1px;
+	padding: 0 0 0 2%;
+}
+.green_btn {
+	border-bottom: 1px solid #fff;
+	background: #27AE60;
+}
+.green_btn:hover {
+	background: #25a65b; 
+}
 /* ========================================================================== */ 
 /*   								Emirates 
 /* ========================================================================== */
@@ -313,6 +333,9 @@ header ul li a:hover { color: #3498DB; }
 	background: #56A7D3;
 	margin-bottom: 0;
 }
+.tl_hero img {
+	margin-left: 4.5%;
+}
 .tl_wrap .inner{
 	margin-bottom: 0;
 	padding-top: 4%;
@@ -333,9 +356,7 @@ header ul li a:hover { color: #3498DB; }
 /* ========================================================================== */ 
 /*   								Cutty sark 
 /* ========================================================================== */
-#cutty_hero {
-	background: url(../img/projects/cutty/cutty_noise.jpg);
-}
+#cutty_hero { background: url(../img/projects/cutty/cutty_noise.jpg); }
 #cutty_hero img { margin-left: 33%; }
 /* ========================================================================== */ 
 /*   								50 Logos 
@@ -357,6 +378,30 @@ header ul li a:hover { color: #3498DB; }
 	margin-left: 28%;
 	margin-bottom: 0 !important;
 }
+#gent_btn {
+	position: relative;
+	top: 40px;
+	left: 55px;
+	color: #4c4c4c;
+	float: left;
+	min-width: 150px;
+	border-top: 1px solid rgba(76,76,76,0.0);
+	border-bottom: 1px solid #fff;
+	background: url(../img/projects/gent/sir_fitz_bg_02.jpg);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#gent_btn:hover {
+	border-top: 1px solid rgba(76,76,76,0.40);
+	box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+	-webkit-box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+}
+/* Ketch all launch btn */ 
+@media  screen and (min-width: 320px) and (max-width: 960px) { 
+#gent_btn { width: 175px; margin-bottom: 50px; left:5%;}
+}
 /* ========================================================================== */ 
 /*   								Edge 
 /* ========================================================================== */
@@ -367,63 +412,98 @@ header ul li a:hover { color: #3498DB; }
 	background-size: cover;
 }
 /* ========================================================================== */ 
-/*   								About resume
+/*   								Lubalin 
 /* ========================================================================== */
-#me_wrap {
-	margin: 0 auto !important;
+#lubalin_hero {
+	height: 500px;
+	width: 100%;
+	background: url(../img/projects/lubalin/lubalin_01.png) no-repeat center bottom; 
+	background-size: cover;
+}
+/* ========================================================================== */ 
+/*   								About 
+/* ========================================================================== */
+#about {
+	margin: 1.8% auto 0 auto;
+	text-align: center;
 }
 #me {
+	width: 85%;
+	vertical-align: middle;
+	margin: 0 auto !important;
+	z-index: 1;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
 }
-/*#about_wrap {
+#about h2 {
+	position: relative;
+	bottom: 60px;
+	margin-bottom: 0;
+	font-size: 2.5em;
+	color: #fff;
+	padding: 3% 0 3% 0;
 	z-index: 999;
-	background: rgba(52,153,220, 0.90); 
+	background: rgba(39,127,186,0.9);
+	text-shadow: 0px 1px 0px rgba(36,127,188,1);
+	-webkit-text-shadow: 0px 1px 0px rgba(36,127,188,1);
+	-o-text-shadow: 0px 1px 0px rgba(36,127,188,1);
+	-ms-text-shadow: 0px 1px 0px rgba(36,127,188,1);
 }
-*/ 
-#resume_main p {
-	
-}
-#resume_header { 
-	height: 100px;
-	padding-top: 3%;
-	margin-bottom: 3%;
-	font-size: 0.75em;
-	line-height: 0.4em;
-	line-height: 5px;
-	border-bottom: 1px solid rgba(52,153,220, 0.90);
-}
-#resume_header {
-	
-}
-#header_left { 
-	width: 20%;
-}
-#header_right {
-	text-align: right;
-}
-#header_left p {
-	margin-right: 0;
-}
-.title {
-	font-size: 1.5em;
-	color: rgba(52,153,220, 0.90);
+#about p {
+	position: relative;
+	bottom: 30px;
+	font-size: 1.2em;
+	line-height: 1.6em;
+	text-align: left;
 }
 /* ========================================================================== */ 
 /*   								Contact 
 /* ========================================================================== */
 #contact_wrap  {
 	width: 50%;
+	margin-top: 3%;
 	margin: 0 auto;
-	height: 100px;
 	border: 1px solid #000;
+}
+input {
+	border: rgba(36,127,188,1);
+}
+form { margin: 0 0 18px; }
+form label { 
+	display: block;  
+	font-size: 1em; 
+	line-height: 1.625em; 
+	cursor: pointer; 
+	margin-bottom: 9px; 
+}
+form label.inline {
+	display: inline-block; 
+	padding-right: 20px; 
+}
+form dt { margin: 0; }
+form textarea { height: 150px; }
+form ul, form ul li {
+	margin-left: 0; 
+	list-style-type: none;
+}
+form fieldset { 
+	border-style: solid; 
+	border-width: 0.0625em; 
+	padding: 1.5625em;
+	border-color: #d8d8d8;
+	margin: 18px 0; 
+}
+/* ========================================================================== */ 
+/*   								video 
+/* ========================================================================== */
+.video {
+
 }
 /* ========================================================================== */ 
 /*   								Grid 
 /* ========================================================================== */
-
 .col {
     float: left;
     margin-bottom: 0.6%;
@@ -465,9 +545,11 @@ header ul li a:hover { color: #3498DB; }
 
 
 
-/* annoying */ 
+
+/* Ketch all */ 
 @media  screen and (min-width: 320px) and (max-width: 700px) { 
 .inner { width: 95%; } 
+
 }
 /* ========================================================================== */ 
 /*   768, 959
@@ -481,6 +563,7 @@ header ul li a:hover { color: #3498DB; }
 	margin-bottom: 2%;
 	width: 80% !important;
 	float: left;
+	clear: both;
 } 
 #intro_middle { width: 55%; }
 #intro h4 { font-size: 1em; }
@@ -499,10 +582,11 @@ header ul li a:hover { color: #3498DB; }
 	float: left;
 }
 #intro_middle { width: 80%; } 
-#emirates_logo_wrap .inner img { margin: 0 0 0 10%; }
+#emirates_logo_wrap .inner img { margin: 0 0 0 15%; }
 #cutty_hero img { margin-left: 20%; }
 #gent_logo_wrap img { margin-left: 13%; width: 80%; }
-	
+#about { width: 75%; margin: 0 auto;}
+#gent_btn {left:0%;}
 }/* ================================== 480, 767 end ======================================== */
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
@@ -554,6 +638,7 @@ header ul li a {
 }
 #gent_logo_wrap img { margin-left: 13%; width: 80%; }
 #me { width: 90%; margin-left: 5%; }
+#about {width: 90%;}
 /* ================================== 320, 479 end ======================================== */
 }
 

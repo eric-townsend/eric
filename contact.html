@@ -11,6 +11,7 @@
 		<meta name="description" content="San Francisco based web designer, New Media">
 		<meta name="viewport" content="width=device-width">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="img/favicon.ico" />
 		<! -- css --> 
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/main.css">
@@ -26,7 +27,7 @@
 				<ul class="fl">
 					<li><a href="index.html" id="logo">Eric Townsend New Media</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="contact.html">Contact</a></li>
 				</ul> <!-- end ul nav -->  
 				<!-- social -->
 				<ul id="social-wrap" class="fr">
@@ -38,25 +39,23 @@
 			</nav><!-- end nav -->  
 		</header><!-- end header -->			
         
-        <section id="contact_wrap" class="inner">
-			<form id="demo-form" method="post" action="" data-validate="parsley">
-				<label for="fullname">Full Name * :</label>
-				<input type="text" id="fullname" name="fullname" data-required="true" />
-			
-				<label for="email">Email * :</label>
-				<input type="text" id="email" name="email" data-trigger="change" data-required="true" data-type="email" />
-			
-				<label for="website">Website :</label>
-				<input type="text" id="website" name="website" data-trigger="change" data-type="url" />
-			
-				<label for="message">Message (20 chars min, 200 max) :</label>
-				<textarea id="message" name="message" data-trigger="keyup" data-rangelength="[20,200]"></textarea>
-				
-				<button type="submit" value="sumit"> Send </button>
-			</form>
-			
-			
-        </section><!-- end contact wrap -->            
+        <form name="contactform" method="post" action="form.php">
+    <form name="contactform" method="post" action="form.php" data-validate="parsley">
+
+
+ 
+  <label for="first_name">Name</label>
+  <input  type="text" name="first_name" maxlength="50" data-required="true">
+
+
+  <label for="email">Email Address *</label>
+  <input  type="text" name="email" maxlength="80" data-required="true">
+
+  <label for="comments">Hello</label>
+  <textarea  name="comments" data-required="true"></textarea>
+
+  <input type="submit" value="Submit"><a href="http://www.freecontactform.com/email_form.php"> </a>
+		 
           
 	    <footer></footer><!-- end footer -->
         <script src="js/libs/conditionizr.js"></script>
