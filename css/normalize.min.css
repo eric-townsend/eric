@@ -140,7 +140,7 @@ html[xmlns] .slides {display: block;}
 .carousel li {margin-right: 5px}
 
 
-/* Direction Nav */
+/* Direction Nav 
 .flex-direction-nav {*height: 0;}
 .flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
 .flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
@@ -149,17 +149,62 @@ html[xmlns] .slides {display: block;}
 .flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+*/
 
 /* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
-.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
-.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
-.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
-.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
-
-.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
-.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
-.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: -40px; 
+	text-align: center;
+}
+.flex-control-nav li {
+	margin: 0 6px; 
+	display: inline-block; 
+	zoom: 1; 
+	*display: inline;
+}
+.flex-control-paging li a {
+	width: 16px; 
+	height: 16px; 
+	display: block; 
+	cursor: pointer; 
+	text-indent: -9999px; 
+	background: #a6a6a6;
+	border-bottom: 1px solid rgba(255,255,255,1);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%; 
+	-o-border-radius: 50%; 
+	border-radius: 50%; 
+	-webkit-box-shadow: 0 1px 4px -6px black;
+	-moz-box-shadow: 0 1px 5px -6px black;
+	box-shadow: 0 1px 4px -6px black;
+}
+.flex-control-paging li a:hover { 
+	background: rgba(52,153,220, 0.90); 
+ }
+.flex-control-paging li a.flex-active {
+	background: #919191; 
+	cursor: default; 
+	background: #555555; 
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+}
+.flex-control-thumbs {
+	margin: 5px 0 0; 
+	position: static; 
+	overflow: hidden;
+}
+.flex-control-thumbs li {
+	width: 25%; 
+	float: left; 
+	margin: 0;
+}
+.flex-control-thumbs img {
+	width: 100%; 
+	display: block; 
+	opacity: .7; 
+	cursor: pointer;
+}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 

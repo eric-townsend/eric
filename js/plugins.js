@@ -28,7 +28,7 @@ $(document).ready(function() {
  
     $("body").fadeIn(700);
  
-    $("a").click(function(event){
+    $("nav ul li a, thumbnail a").click(function(event){
         event.preventDefault();
         linkLocation = this.href;
         $("body").fadeOut(500, redirectPage);      
