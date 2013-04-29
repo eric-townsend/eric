@@ -10,7 +10,7 @@ body {
 	line-height: 1.4;
 }
 /* ========================================================================== */ 
-/*   						Typography
+/* Typography
 /* ========================================================================== */
 h1, h2, h3, h4, h5, h6 { font-family: 'lato', helvetica, arial, sans-serif; color: #393939; }
 h1 {margin: 0; font-size: 3.75em; line-height: 1.2em; margin-bottom: 0.4em} /* 60px / 72px */
@@ -22,7 +22,7 @@ h6 {margin: 0; font-size: 1.125em; line-height: 1.333333333333333333333333333333
 p, ul, blockquote, pre, td, th, label {margin: 0; font-size: 1em; margin-bottom: 1.5em; color: #393939} /* 16px / 24px */
 small, p.small {margin: 0; font-size: 0.875em; line-height: 1.7142857142857142857142857142857em; margin-bottom: 1.7142857142857142857142857142857em} /* 14px / 24px */
 /* ========================================================================== */ 
-/*   					   Architecture
+/* Architecture
 /* ========================================================================== */
 .inner {
 	width: 85%;
@@ -44,7 +44,7 @@ footer {
 	background: rgba(0,0,0,0.98);
 }
 /* ========================================================================== */ 
-/*  						Header + Nav 
+/* Header + Nav 
 /* ========================================================================== */
 header {
 	top: 0;
@@ -98,7 +98,7 @@ header ul li a:hover { color: #3498DB; }
 .social { width: 25px; }
 .social a { padding: 10px;}
 /* ========================================================================== */ 
-/*    						  Home Hero 
+/* Home Hero 
 /* ========================================================================== */
 .hero {
 	width: 100%;
@@ -142,7 +142,7 @@ header ul li a:hover { color: #3498DB; }
 	font-size: 0.5em;
 }
 /* ========================================================================== */ 
-/*    						Have a Look Around / sub titles 
+/* Have a Look Around / sub titles 
 /* ========================================================================== */
 #look {
 	width: 48%;
@@ -170,7 +170,7 @@ header ul li a:hover { color: #3498DB; }
 	border-bottom: 1px solid #dcdcdc;
 }
 /* ========================================================================== */ 
-/*    						Portfolio Grid
+/* Home Portfolio Grid
 /* ========================================================================== */
 #porfolio > h1 {
 	color: #3498DB; 
@@ -229,7 +229,7 @@ header ul li a:hover { color: #3498DB; }
 	color: #ffffff !important;
 }
 /* ========================================================================== */ 
-/*   							project description 
+/* Project Description 
 /* ========================================================================== */
 .project_desc {
 	margin-top: 3% !important;
@@ -243,7 +243,7 @@ header ul li a:hover { color: #3498DB; }
 	-ms-text-shadow: 0px 1px 0px #fff;
 }
 /* ========================================================================== */ 
-/*   						   pagination / buttons
+/* Pagination + Buttons
 /* ========================================================================== */
 .pagination { color: #555555; }
 .pagination span {
@@ -309,7 +309,7 @@ header ul li a:hover { color: #3498DB; }
 	background: #25a65b; 
 }
 /* ========================================================================== */ 
-/*   								Emirates 
+/* Emirates 
 /* ========================================================================== */
 #emirates_logo_wrap {
 	width: 100%;
@@ -326,7 +326,7 @@ header ul li a:hover { color: #3498DB; }
 }
 #emirates_history { width: 100%;}
 /* ========================================================================== */ 
-/*   								Tenderloin 
+/* Tenderloin 
 /* ========================================================================== */
 .tl_wrap {
 	width: 100%;
@@ -354,12 +354,12 @@ header ul li a:hover { color: #3498DB; }
 	padding-bottom: 5%;
 }
 /* ========================================================================== */ 
-/*   								Cutty sark 
+/* Cutty sark 
 /* ========================================================================== */
 #cutty_hero { background: url(../img/projects/cutty/cutty_noise.jpg); }
 #cutty_hero img { margin-left: 33%; }
 /* ========================================================================== */ 
-/*   								50 Logos 
+/* 50 Logos 
 /* ========================================================================== */
 #logos_hero {
 	height: 500px;
@@ -368,7 +368,7 @@ header ul li a:hover { color: #3498DB; }
 	background-size: cover;
 }
 /* ========================================================================== */ 
-/*   								Gent 
+/* Gent 
 /* ========================================================================== */
 #gent_logo_wrap {
 	background: url(../img/projects/gent/sir_fitz_bg_02.jpg);
@@ -403,7 +403,7 @@ header ul li a:hover { color: #3498DB; }
 #gent_btn { width: 175px; margin-bottom: 50px; left:5%;}
 }
 /* ========================================================================== */ 
-/*   								Edge 
+/* Edge 
 /* ========================================================================== */
 #edge_hero {
 	height: 500px;
@@ -412,7 +412,7 @@ header ul li a:hover { color: #3498DB; }
 	background-size: cover;
 }
 /* ========================================================================== */ 
-/*   								Lubalin 
+/* Lubalin 
 /* ========================================================================== */
 #lubalin_hero {
 	height: 500px;
@@ -420,15 +420,106 @@ header ul li a:hover { color: #3498DB; }
 	background: url(../img/projects/lubalin/lubalin_01.png) no-repeat center bottom; 
 	background-size: cover;
 }
+#lubalin_btn {
+	position: relative;
+	top: 35px;
+	left: 55px;
+	color: #fff;
+	float: left;
+	min-width: 150px;
+	border-top: 1px solid rgba(76,76,76,0.0);
+	border-bottom: 1px solid #fff;
+	background: #6994B7;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#lubalin_btn:hover {
+	background: #648fb1;
+	border-top: 1px solid rgba(76,76,76,0.40);
+	box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+	-webkit-box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+}
+/* Ketch all launch btn */ 
+@media  screen and (min-width: 320px) and (max-width: 960px) { 
+#lubalin_btn { width: 175px; margin-bottom: 50px; left:5%;}
+}
 /* ========================================================================== */ 
-/*   								About 
+/* Fosters 
 /* ========================================================================== */
-#about {
+#fosters_hero {
+	width: 100%;
+	background: #fff;
+}
+#fosters_btn {
+	position: relative;
+	top: 10px;
+	left: 55px;
+	color: #fff;
+	float: left;
+	min-width: 150px;
+	border-top: 1px solid rgba(76,76,76,0.0);
+	border-bottom: 1px solid #fff;
+	background: #E25632;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#fosters_btn:hover {
+	background: #d04e2c;
+	border-top: 1px solid rgba(76,76,76,0.40);
+	box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+	-webkit-box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+}
+/* Ketch all launch btn */ 
+@media  screen and (min-width: 320px) and (max-width: 960px) { 
+#fosters_btn { width: 175px; margin-bottom: 50px; left:5%;}
+}
+/* ========================================================================== */ 
+/* New 
+/* ========================================================================== */
+#new_hero {
+	width: 100%;
+	background: #fff;
+}
+#new_btn {
+	position: relative;
+	top: 0px;
+	left: 55px;
+	color: #fff;
+	float: left;
+	min-width: 150px;
+	border-top: 1px solid rgba(76,76,76,0.0);
+	border-bottom: 1px solid #fff;
+	background: #3AAEB3;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#new_btn:hover {
+	background: #32a2a6;
+	border-top: 1px solid rgba(76,76,76,0.40);
+	box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+	-webkit-box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+	-moz-box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+	-o-box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+}
+/* Ketch all launch btn */ 
+@media  screen and (min-width: 320px) and (max-width: 960px) { 
+#new_btn { width: 175px; margin-bottom: 50px; left:5%;}
+}
+/* ========================================================================== */ 
+/* Get in Touch 
+/* ========================================================================== */
+#get_in_touch {
 	margin: 1.8% auto 0 auto;
 	text-align: center;
 }
 #me {
-	width: 85%;
+	width: 75%;
 	vertical-align: middle;
 	margin: 0 auto !important;
 	z-index: 1;
@@ -437,70 +528,59 @@ header ul li a:hover { color: #3498DB; }
 	-o-border-radius: 50%;
 	border-radius: 50%;
 }
-#about h2 {
+#get_in_touch h2 {
 	position: relative;
-	bottom: 60px;
+	bottom: 50px;
 	margin-bottom: 0;
-	font-size: 2.5em;
-	color: #fff;
+	font-size: 1.5em;
 	padding: 3% 0 3% 0;
+	color: #fff;
 	z-index: 999;
-	background: rgba(39,127,186,0.9);
-	text-shadow: 0px 1px 0px rgba(36,127,188,1);
-	-webkit-text-shadow: 0px 1px 0px rgba(36,127,188,1);
-	-o-text-shadow: 0px 1px 0px rgba(36,127,188,1);
-	-ms-text-shadow: 0px 1px 0px rgba(36,127,188,1);
+	background: rgba(39,127,186,0.9);;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
-#about p {
+#get_in_touch p {
 	position: relative;
-	bottom: 30px;
+	bottom: 0px;
 	font-size: 1.2em;
 	line-height: 1.6em;
 	text-align: left;
 }
-/* ========================================================================== */ 
-/*   								Contact 
-/* ========================================================================== */
-#contact_wrap  {
-	width: 50%;
-	margin-top: 3%;
-	margin: 0 auto;
-	border: 1px solid #000;
+#get_in_touch a {
+	display: block;
+	float: left;
+	padding: 10px;
+	margin-right: 4%;
+	margin-bottom: 4%;
+	min-width: 18.22%;
+	border-bottom: 1px solid #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
-input {
-	border: rgba(36,127,188,1);
-}
-form { margin: 0 0 18px; }
-form label { 
-	display: block;  
-	font-size: 1em; 
-	line-height: 1.625em; 
-	cursor: pointer; 
-	margin-bottom: 9px; 
-}
-form label.inline {
-	display: inline-block; 
-	padding-right: 20px; 
-}
-form dt { margin: 0; }
-form textarea { height: 150px; }
-form ul, form ul li {
-	margin-left: 0; 
-	list-style-type: none;
-}
-form fieldset { 
-	border-style: solid; 
-	border-width: 0.0625em; 
-	padding: 1.5625em;
-	border-color: #d8d8d8;
-	margin: 18px 0; 
-}
-/* ========================================================================== */ 
-/*   								video 
-/* ========================================================================== */
-.video {
 
+#dribbble {
+	color: #fff;
+	background: #EA4C88;
 }
+#dribbble:hover {
+	background: #d53f78;
+}
+.connect_btn {
+	border-top: 1px solid rgba(76,76,76,0.10);
+}
+.connect_btn:hover {
+	border-top: 1px solid rgba(76,76,76,0.40);
+	box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+	-webkit-box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+	-moz-box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+	-o-box-shadow:inset 0px 0px 4px rgba(0,0,0,.3);
+}
+#last_connect{ margin-right: 0 !important; }
+
+
 /* ========================================================================== */ 
 /*   								Grid 
 /* ========================================================================== */
@@ -534,7 +614,7 @@ form fieldset {
     width: 100%;
 }
 /* ========================================================================== */ 
-/*   Media Queries 
+/* Media Queries 
 /* ========================================================================== */
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {}
@@ -552,7 +632,7 @@ form fieldset {
 
 }
 /* ========================================================================== */ 
-/*   768, 959
+/* 768, 959
 /* ========================================================================== */
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -642,11 +722,6 @@ header ul li a {
 /* ================================== 320, 479 end ======================================== */
 }
 
-
-
-
-
-
 /* ========================================================================== */ 
 /*  Retina
 /* ========================================================================== */
@@ -655,4 +730,3 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 }
-
