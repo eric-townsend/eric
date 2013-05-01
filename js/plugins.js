@@ -23,12 +23,12 @@
 /* ======================= */
 /*		fade in,out 	   
 ======================= */ 
-$(document).ready(function() {
+ $(document).ready(function() {
     $("body").css("display", "none");
  
     $("body").fadeIn(700);
  
-    $("nav ul li a, thumbnail a").click(function(event){
+    $("nav fl li a, thumbnail a").click(function(event){
         event.preventDefault();
         linkLocation = this.href;
         $("body").fadeOut(500, redirectPage);      

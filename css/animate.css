@@ -77,7 +77,64 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-delay: 2.3s !important;
 	animation-delay: 2.3s !important;
 }
-
+/* ====================================================*/ 
+/*===========    		Hover           ===============*/ 
+/* ====================================================*/ 
+@-webkit-keyframes hoverUpDown {
+	0% {
+      -webkit-transform: translateY(0px);
+    }
+	50% {
+       -webkit-transform: translateY(10px);
+    }
+    100% {
+	    -webkit-transform: translateY(0px);
+    }
+}
+@-moz-keyframes hoverUpDown {
+	0% {
+        -moz-transform: translateY(0px);
+    }
+	50% {
+     	 -moz-transform: translateY(10px);
+    }
+    100% {
+	    -moz-transform: translateY(0px);
+    }
+}
+@-o-keyframes hoverUpDown {
+	0% {
+        -o-transform: translateY(0px);
+    }
+	50% {
+      -o-transform: translateY(10px);
+    }
+    100% {
+	     -o-transform: translateY(0px);
+    }
+}
+@keyframes hoverUpDown {
+	0% {
+        transform: translateY(0px);
+    }
+	50% {
+       transform: translateY(10px);
+    }
+    100% {
+	    transform: translateY(0px);
+    }
+}
+.hoverUpDown {
+	-webkit-animation: hoverUpDown 7s ease infinite;  
+	-moz-animation-name: hoverUpDown 7s ease infinite;
+	-o-animation-name: hoverUpDown 7s ease infinite;
+	animation-name: hoverUpDown 7s ease infinite;
+	
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+}
 /* ====================================================*/ 
 /*===========    Pulse Black and white = ==============*/ 
 /* ====================================================*/ 
@@ -91,26 +148,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 @-moz-keyframes BWfade {
 	0% {
-        -webkit-filter: grayscale(100%); 
+        -moz-filter: grayscale(100%); 
     }
 	100% {
-       -webkit-filter: grayscale(0%); 
+       -moz-filter: grayscale(0%); 
     }
 }
 @-o-keyframes BWfade {
 	0% {
-        -webkit-filter: grayscale(100%); 
+        -o-filter: grayscale(100%); 
     }
 	100% {
-       -webkit-filter: grayscale(0%); 
+       -o-filter: grayscale(0%); 
     }
 }
 @keyframes BWfade {
 	0% {
-        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%); 
     }
 	100% {
-       -webkit-filter: grayscale(0%); 
+       filter: grayscale(0%); 
     }
 }
 .BWfade {
