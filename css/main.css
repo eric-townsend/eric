@@ -228,6 +228,15 @@ header ul li a:hover { color: #3498DB; }
 .thumbnail a:hover .title, .thumbnail a:hover .category { 
 	color: #ffffff !important;
 }
+@media  screen and (min-width: 321px) and (max-width: 959px) {
+	.thumbnail{
+		display: block;
+		margin-left: 0.8%;
+		margin-bottom: 2%;
+		width: 48% !important;
+		float: left !important;
+	} 
+}
 /* ========================================================================== */ 
 /* Project Description 
 /* ========================================================================== */
@@ -645,8 +654,6 @@ header ul li a:hover { color: #3498DB; }
 		padding: 15px 7% 15px 7%;
 	}
 }
-@media  screen and (min-width: 320px) and (max-width: 480px) { 
-	}
 /* ========================================================================== */ 
 /*   								Grid 
 /* ========================================================================== */
@@ -683,7 +690,7 @@ header ul li a:hover { color: #3498DB; }
 /* Media Queries 
 /* ========================================================================== */
 /* Ketch all */ 
-@media  screen and (min-width: 320px) and (max-width: 700px) { 
+@media  screen and (min-width: 320px) and (max-width: 959px) { 
 	.inner { width: 95%; } 
 }
 /* ========================================================================== */ 
@@ -691,14 +698,6 @@ header ul li a:hover { color: #3498DB; }
 /* ========================================================================== */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media  screen and (min-width: 768px) and (max-width: 959px) {
-	.span_4 {
-		display: block;
-		margin-left: 5%;
-		margin-bottom: 2%;
-		width: 80% !important;
-		float: left;
-		clear: both;
-	} 
 	#intro_middle { width: 55%; }
 	#intro h4 { font-size: 1em; }
 	#emirates_logo_wrap .inner img { margin: 0 0 0 25%; }
@@ -707,10 +706,10 @@ header ul li a:hover { color: #3498DB; }
 }/* ================================== 768, 959 end ======================================== */
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media  screen and (min-width: 480px) and (max-width: 767px) {
-	.span_4 {
+	.project_desc > .span_4 {
 		display: block;
 		margin-bottom: 3%;
-		width: 90% !important;
+		width: 100% !important;
 		float: left;
 	}
 	#intro_middle { width: 80%; } 
@@ -732,11 +731,15 @@ header ul li a:hover { color: #3498DB; }
 	.row .col:first-child {
 	    margin-left: 0;
 	}
-	.span_4 {
+	.project_desc .span_4 {
 	    margin-left: 0 !important;
 	    display: block;
 	    width: 100% !important;
 	    clear: both;
+	}
+	.thumbnail {
+		width: 100% !important;
+		margin-bottom: 1%;
 	}
 	.span_4 h2 { 
 		text-align: center;
